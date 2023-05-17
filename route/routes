@@ -1,0 +1,34 @@
+var express = require('express');
+const app = express();
+
+var studentController = require('../src/student/studentController');
+var companiesDetailController = require('../src/companiesDetail/companiesDetailController')
+var courierDataController = require('../src/courierdata/courierDataController')
+const router = express.Router();
+
+router.route('/student/login').post(studentController.loginUserControllerFn);
+router.route('/student/create').post(studentController.createStudentControllerFn);
+router.route('/companies/create').post(companiesDetailController.createcompaniesDetailControllerFn);
+router.route('/companies/get').get(companiesDetailController.getompaniesDetailControllerFn);
+
+
+// Create or update a courier data record with the specified ID
+router.post('/courierdata/:id', async (req, res) => {
+    try {
+      const id = req.params.id;
+      const data = req.body;
+      const result = await courierDataController.createCourierDataFn(id, data);
+      if (result) {
+        res.status(200).send({ message: 'Courier data created or updated successfully.' });
+      } else {
+        res.status(500).send({ message: 'Error creating courier data.' });
+      }
+    } catch (error) {
+      console.log(error);
+      res.status(500).send({ message: 'Error creating courier data.' });
+    }
+  });
+
+module.exports = router;
+
+  
