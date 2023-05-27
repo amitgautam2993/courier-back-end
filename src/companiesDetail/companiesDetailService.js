@@ -11,7 +11,7 @@ module.exports.companiesDetailServices = (companyDetails) => {
         }
         if (company) {
           console.log('Duplicate found');
-          resolve(false);
+          resolve('duplicate'); 
           return;
         }
   
@@ -21,7 +21,7 @@ module.exports.companiesDetailServices = (companyDetails) => {
           { new: true},
           (error, counter) => {
             if (error) {
-              console.log(error);
+              console.log('hi',error);
               reject(false);
               return;
             }
@@ -47,6 +47,52 @@ module.exports.companiesDetailServices = (companyDetails) => {
       });
     });
   };
+  
+  module.exports.updateCompaniesDetail = (companyId, companyDetails) => {
+    return new Promise((resolve, reject) => {
+      companyModel.findOne({ Companyname: companyDetails.Companyname }, (err, company) => {
+        if (err) {
+          console.log(err);
+          reject(false);
+          return;
+        }
+        if (company) {
+          console.log('Duplicate found');
+          resolve('duplicate');// Reject the operation if a duplicate company is found
+          return;
+        }
+      companyModel.findOne({ companyid: companyId }, (err, company) => {
+        if (err) {
+          console.log(err);
+          reject(false);
+          return;
+        }
+        if (!company) {
+          console.log('Company not found');
+          resolve('not-found');
+          return;
+        }
+  
+        company.Companyname = companyDetails.Companyname;
+        company.Ownername = companyDetails.Ownername;
+        company.email = companyDetails.email;
+        company.address = companyDetails.address;
+  
+        company.save((error, result) => {
+          if (error) {
+            reject(false);
+            console.log(error);
+          } else {
+            resolve(true);
+          }
+        });
+      });
+    });
+
+    });
+  };
+  
+
   
 module.exports.getCompaniesDetailServices = ()=>{
 

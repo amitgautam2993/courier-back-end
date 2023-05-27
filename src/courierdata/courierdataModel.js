@@ -12,11 +12,51 @@ const courierDataSchema = new Schema({
       required: true
     },
     date: {
-      type: String,
+      type: Date,
       required: true
+    },
+    destination:{
+      type:String,
+      required:true
+    },
+    type:{
+      type:String,
+      required:true
+    },
+    pc:{
+      type:Number,
+      required:true
+    },
+    rate:{
+      type:Number,
+      required:true,
+    },
+    weight:{
+      type:Number,
+      required:true,
+    },
+    amount:{
+      type:Number,
+      required:true,
+    },
+
+    createDate: {
+      type: Date,
+      default: Date.now
+    },
+    modifiedDate: {
+      type: Date,
+      default: Date.now
     }
   }]
+  
 });
+courierDataSchema.pre('save', function (next) {
+  this.courierDetails.forEach(detail => {
+    detail.modifiedDate = Date.now();
+  });
+  next();
+})
 
 module.exports = mongoose.model('CourierData', courierDataSchema);
 

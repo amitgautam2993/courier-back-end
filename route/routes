@@ -1,5 +1,6 @@
 var express = require('express');
 const app = express();
+const axios = require('axios');
 
 var studentController = require('../src/student/studentController');
 var companiesDetailController = require('../src/companiesDetail/companiesDetailController')
@@ -10,24 +11,54 @@ router.route('/student/login').post(studentController.loginUserControllerFn);
 router.route('/student/create').post(studentController.createStudentControllerFn);
 router.route('/companies/create').post(companiesDetailController.createcompaniesDetailControllerFn);
 router.route('/companies/get').get(companiesDetailController.getompaniesDetailControllerFn);
+router.route('/companies/update/:companyId').put(companiesDetailController.updateCompaniesDetailControllerFn);
+// router.put('/courierdata/daterange/:id', courierDataController.fetchDataWithinDateRange);
 
-
+//router.route('/courierdata/daterange/:id').put(courierDataController.fetchDataWithinDateRange);
 // Create or update a courier data record with the specified ID
-router.post('/courierdata/:id', async (req, res) => {
-    try {
-      const id = req.params.id;
-      const data = req.body;
-      const result = await courierDataController.createCourierDataFn(id, data);
-      if (result) {
-        res.status(200).send({ message: 'Courier data created or updated successfully.' });
-      } else {
-        res.status(500).send({ message: 'Error creating courier data.' });
-      }
-    } catch (error) {
-      console.log(error);
-      res.status(500).send({ message: 'Error creating courier data.' });
+router.post('/courierdata/create/:id', async (req, res) => {
+  try {
+    const id = req.params.id;
+    const data = req.body;
+    const result = await courierDataController.createCourierDataFn(id, data);
+    if (result === 'duplicate') {
+      res.status(404).send({ status: 404, message: 'Duplicate cno found.' });
+    } else if (result === true) {
+      res.status(200).send({ status: 200, message: 'Courier data created or updated successfully.' });
+    } else {
+      res.status(400).send({ status: 400, message: 'Error creating or updating courier data.' });
     }
-  });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ status: 500, message: 'Error creating courier data.' });
+  }
+});
+
+
+
+router.post('/api/trackings/realtime', async (req, res) => {
+  try {
+    const { tracking_number, carrier_code } = req.body;
+
+    const headers = {
+      'Content-Type': 'application/json',
+      'Tracktry-Api-Key':'fb68a592-0e9e-4152-b27d-11871a47db97'
+      // Add any additional headers required by the Tracktry API
+      // Example: 'Authorization': 'Bearer <your-access-token>'
+    };
+
+    const response = await axios.post('https://api.tracktry.com/v1/trackings/realtime', {
+      tracking_number,
+      carrier_code
+    }, {
+      headers: headers
+    });
+
+    res.send(response.data);
+  } catch (error) {
+    res.status(error.response.status).send(error.response.data);
+  }
+});
 
 module.exports = router;
 

@@ -28,7 +28,13 @@ module.exports.courierDataService = (id, courierDataDetail) => {
   return new Promise(function myFn(resolve, reject) {
     let courierdataModelData = {
       cnumber: courierDataDetail.cnumber,
-      date: courierDataDetail.date
+      date: courierDataDetail.date,
+      destination:courierDataDetail.destination,
+      type:courierDataDetail.type,
+      pc:courierDataDetail.pc,
+      rate:courierDataDetail.rate,
+      weight:courierDataDetail.weight,
+      amount:courierDataDetail.amount
     };
     courierdataModelData = new courierDataModel(courierdataModelData);
     createCourierDataFn(id, courierdataModelData)
