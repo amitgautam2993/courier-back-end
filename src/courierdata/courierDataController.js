@@ -1,6 +1,7 @@
 const CourierData = require('./courierdataModel');
 
 async function createCourierDataFn(id, courierDataDetail) {
+
   try {
     // Check if a courier data record with the specified cno exists
     const existingData = await CourierData.findOne({ 'courierDetails.cnumber': courierDataDetail.cnumber });
@@ -31,6 +32,26 @@ async function createCourierDataFn(id, courierDataDetail) {
   }
 }
 
+async function updateCourierDataFn(id, updatedCourierData) {
+  try {
+    // Find the courier data record with the specified ID
+    let courierDataRecord = await CourierData.findOne({ id: id });
+    if (courierDataRecord) {
+      // Update the courier details based on the provided data
+      courierDataRecord.courierDetails = updatedCourierData;
+      await courierDataRecord.save();
+      return true; // Return true to indicate that the update was successful
+    } else {
+      console.log('Courier data record not found');
+      return false; // Return false to indicate that the update failed
+    }
+  } catch (error) {
+    console.log('Error:', error);
+    return false; // Return false to indicate that the update failed
+  }
+}
+
+
 async function fetchDataWithinDateRange(req, res) {
   const id = req.params.id;
   const from = new Date(req.query.from);
@@ -45,109 +66,25 @@ async function fetchDataWithinDateRange(req, res) {
         $lte: to,
       },
     });
-    res.json(result);
+    if (!result) {
+      res.status(404).json({ status:404,message: 'No Data Found For this date range',data:null });
+    } else {
+      res.status(200).json({status:200,message:'Success',data:result});
+    }
+    
   } catch (err) {
-    console.error('Error executing MongoDB query:', err);
-    res.status(500).json({ error: 'Internal server error' });
+    // console.error('Error executing MongoDB query:', err);
+    res.status(500).json({ error:500,message: 'Internal server error' });
   }
 }
 
-module.exports = { createCourierDataFn,fetchDataWithinDateRange };
+
+
+
+module.exports = { createCourierDataFn,fetchDataWithinDateRange,updateCourierDataFn};
 
 
 
   
-// courierDataService.js
-
-// const CourierDataModel = require('./courierdataModel');
-
-// async function createCourierDataFn(id, data) {
-//   try {
-//     // Check if a courier data record with the specified ID exists
-//     let courierDataRecord = await CourierDataModel.findOne({ id: id });
-//     if (courierDataRecord) {
-//       // If the courier data record exists, update its fields with the new data
-//       courierDataRecord.cnumber = data.cnumber;
-//       courierDataRecord.date = data.date;
-//       await courierDataRecord.save();
-//     } else {
-//       // If the courier data record doesn't exist, create a new one with the specified ID and data
-//       courierDataRecord = new CourierDataModel({
-//         id: id,
-//         cnumber: data.cnumber,
-//         date: data.date
-//       });
-//       await courierDataRecord.save();
-//     }
-//     return true; // Return true to indicate that the creation or update was successful
-//   } catch (error) {
-//     console.log(error);
-//     return false; // Return false to indicate that the creation or update failed
-//   }
-// }
-
-// module.exports = { createCourierDataFn };
-// const CourierDataModel = require('./courierdataModel');
-
-// async function createCourierDataFn(id, data) {
-//   try {
-//     // Check if a courier data record with the specified ID exists
-//     let courierDataRecord = await CourierDataModel.findOne({ id: id }).lean();
-//     if (courierDataRecord) {
-//       // If the courier data record exists, update its fields with the new data
-//       courierDataRecord.cnumber = data.cnumber;
-//       courierDataRecord.date = data.date;
-//       await CourierDataModel.updateOne({ id: id }, courierDataRecord);
-//     } else {
-//       // If the courier data record doesn't exist, create a new one with the specified ID and data
-//       courierDataRecord = new CourierDataModel({
-//         id: id,
-//         cnumber: data.cnumber,
-//         date: data.date
-//       });
-//       await courierDataRecord.save();
-//     }
-//     return true; // Return true to indicate that the creation or update was successful
-//   } catch (error) {
-//     console.log(error);
-//     return false; // Return false to indicate that the creation or update failed
-//   }
-// }
-
-// module.exports = { createCourierDataFn };
 
 
-// const fs = require('fs');
-// const path = require('path');
-// const CourierDataModel = require('./courierdataModel');
-
-// async function createCourierDataFn(id, data) {
-//   try {
-//     // Check if a courier data record with the specified ID exists
-//     let courierDataRecord = await CourierDataModel.findOne({ id: id }).lean();
-//     if (courierDataRecord) {
-//       // If the courier data record exists, update its fields with the new data
-//       courierDataRecord.cnumber = data.cnumber;
-//       courierDataRecord.date = data.date;
-//       await CourierDataModel.updateOne({ id: id }, courierDataRecord);
-//     } else {
-//       // If the courier data record doesn't exist, create a new one with the specified ID and data
-//       courierDataRecord = new CourierDataModel({
-//         id: id,
-//         cnumber: data.cnumber,
-//         date: data.date
-//       });
-//       await courierDataRecord.save();
-
-//       // Create a folder for the new courier data record
-//       const folderName = path.join(__dirname, 'courier_data', id);
-//       fs.mkdirSync(folderName);
-//     }
-//     return true; // Return true to indicate that the creation or update was successful
-//   } catch (error) {
-//     console.log(error);
-//     return false; // Return false to indicate that the creation or update failed
-//   }
-// }
-
- module.exports = { createCourierDataFn };

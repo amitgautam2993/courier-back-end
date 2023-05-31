@@ -7,6 +7,7 @@ const courierDataSchema = new Schema({
     required: true
   },
   courierDetails: [{
+    
     cnumber: {
       type: String,
       required: true
@@ -38,6 +39,10 @@ const courierDataSchema = new Schema({
     amount:{
       type:Number,
       required:true,
+    },
+    couriercode:{
+      type:String,
+      required:true
     },
 
     createDate: {

@@ -33,7 +33,9 @@ module.exports.companiesDetailServices = (companyDetails) => {
             companyModelData.Ownername = companyDetails.Ownername;
             companyModelData.email = companyDetails.email;
             companyModelData.address = companyDetails.address;
-  
+            companyModelData.shippercode = companyDetails.shippercode;
+
+            
             companyModelData.save((error, result) => {
               if (error) {
                 reject(false);
@@ -77,6 +79,7 @@ module.exports.companiesDetailServices = (companyDetails) => {
         company.Ownername = companyDetails.Ownername;
         company.email = companyDetails.email;
         company.address = companyDetails.address;
+        company.shippercode = companyDetails.shippercode;
   
         company.save((error, result) => {
           if (error) {

@@ -6,33 +6,54 @@ var studentController = require('../src/student/studentController');
 var companiesDetailController = require('../src/companiesDetail/companiesDetailController')
 var courierDataController = require('../src/courierdata/courierDataController')
 const router = express.Router();
+const fetchDataWithinDateRange = require('../src/courierdata/courierDataController');
 
 router.route('/student/login').post(studentController.loginUserControllerFn);
 router.route('/student/create').post(studentController.createStudentControllerFn);
 router.route('/companies/create').post(companiesDetailController.createcompaniesDetailControllerFn);
 router.route('/companies/get').get(companiesDetailController.getompaniesDetailControllerFn);
 router.route('/companies/update/:companyId').put(companiesDetailController.updateCompaniesDetailControllerFn);
-// router.put('/courierdata/daterange/:id', courierDataController.fetchDataWithinDateRange);
+router.get('/courierdata/daterange/:id', courierDataController.fetchDataWithinDateRange);
 
-//router.route('/courierdata/daterange/:id').put(courierDataController.fetchDataWithinDateRange);
-// Create or update a courier data record with the specified ID
 router.post('/courierdata/create/:id', async (req, res) => {
   try {
     const id = req.params.id;
     const data = req.body;
     const result = await courierDataController.createCourierDataFn(id, data);
     if (result === 'duplicate') {
-      res.status(404).send({ status: 404, message: 'Duplicate cno found.' });
+      res.status(404).send({ status: 404, message: 'Duplicate Consignment Number Found.' });
     } else if (result === true) {
-      res.status(200).send({ status: 200, message: 'Courier data created or updated successfully.' });
+      res.status(200).send({ status: 200, message: 'Courier data created Successfully.' });
     } else {
-      res.status(400).send({ status: 400, message: 'Error creating or updating courier data.' });
+      res.status(400).send({ status: 400, message: 'Error creating courier data. Please Check All Details' });
     }
   } catch (error) {
     console.log(error);
     res.status(500).send({ status: 500, message: 'Error creating courier data.' });
   }
 });
+
+
+
+// const { updateCourierDataFn } = courierDataController.updateCourierDataFn
+
+// Define the route for updating courier data
+// router.put('/courierdata/update/:id', async (req, res) => {
+//   const id = req.params.id;
+//   const updatedCourierData = req.body; // Assuming the updated data is sent in the request body
+
+//   try {
+//     const success = await updateCourierDataFn(id, updatedCourierData);
+//     if (success) {
+//       res.status(200).json({ message: 'Courier data updated successfully' });
+//     } else {
+//       res.status(404).json({ message: 'Courier data record not found' });
+//     }
+//   } catch (error) {
+//     console.error('Error:', error);
+//     res.status(500).json({ message: 'Internal server error' });
+//   }
+// });
 
 
 

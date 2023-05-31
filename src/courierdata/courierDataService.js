@@ -34,7 +34,8 @@ module.exports.courierDataService = (id, courierDataDetail) => {
       pc:courierDataDetail.pc,
       rate:courierDataDetail.rate,
       weight:courierDataDetail.weight,
-      amount:courierDataDetail.amount
+      amount:courierDataDetail.amount,
+      couriercode:courierDataDetail.couriercode,
     };
     courierdataModelData = new courierDataModel(courierdataModelData);
     createCourierDataFn(id, courierdataModelData)

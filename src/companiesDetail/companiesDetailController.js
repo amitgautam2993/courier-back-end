@@ -19,6 +19,7 @@ var createcompaniesDetailControllerFn = async(req,res)=>{
 
 }
 }
+
 var updateCompaniesDetailControllerFn = async (req, res) => {
   try {
     const companyId = req.params.companyId;

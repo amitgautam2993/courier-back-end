@@ -19,6 +19,10 @@ var companiesDetailSchema = new Schema({
         type: String,
         required: true
     },
+    shippercode:{
+        type: String,
+        required: true
+    },
     companyid:{
         type:String,
         required:true
