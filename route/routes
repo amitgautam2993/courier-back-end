@@ -10,7 +10,8 @@ const fetchDataWithinDateRange = require('../src/courierdata/courierDataControll
 
 router.route('/student/login').post(studentController.loginUserControllerFn);
 router.route('/student/create').post(studentController.createStudentControllerFn);
-router.route('/companies/create').post(companiesDetailController.createcompaniesDetailControllerFn);
+// router.route('/companies/create').post(companiesDetailController.createcompaniesDetailControllerFn);
+router.route('/companies/create/:username').post(companiesDetailController.createcompaniesDetailControllerFn);
 router.route('/companies/get').get(companiesDetailController.getompaniesDetailControllerFn);
 router.route('/companies/update/:companyId').put(companiesDetailController.updateCompaniesDetailControllerFn);
 router.get('/courierdata/daterange/:id', courierDataController.fetchDataWithinDateRange);

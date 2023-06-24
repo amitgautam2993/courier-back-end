@@ -14,6 +14,7 @@
     "axios": "^1.4.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "lodash": "^4.17.21",
     "mongoose": "^6.9.1",
     "nodemon": "^2.0.20",
     "simple-encrypter": "^0.0.6",

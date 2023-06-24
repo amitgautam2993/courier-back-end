@@ -1,39 +1,51 @@
 var studentService = require('./studentService');
 
-var createStudentControllerFn = async (req, res) => 
-{
-    try
-    {
-    console.log(req.body);
-    var status = await studentService.createStudentDBService(req.body);
-    console.log(status);
+var createStudentControllerFn = async (req, res) => {
+    try {
+        console.log(req.body);
+        var status = await studentService.createStudentDBService(req.body);
+        console.log(status);
 
-    if (status) {
-        res.send({ "status": true, "message": "Student created successfully" });
-    } else {
-        res.send({ "status": false, "message": "Error creating user" });
+        if (status == "User Created") {
+            res.status(200).send({ "status": 200, "message": "Username created successfully" });
+        } else if (status == "Username Already Exists") {
+            res.status(400).send({ "status": 400, "message": "Username Already Exist" });
+        }
+    } catch (err) {
+        res.status(500).send({ "status": 500, "message": "Error Creating User" });
     }
-}
-catch(err)
-{
-    console.log(err);
-}
 }
 
 var loginUserControllerFn = async (req, res) => {
-    var result = null;
     try {
-        result = await studentService.loginuserDBService(req.body);
-        if (result.status) {
-            res.send({ "status": true, "message": result.msg });
-        } else {
-            res.send({ "status": false, "message": result.msg });
-        }
-
+      var result = await studentService.loginuserDBService(req.body);
+      if (result.status) {
+        res.send({ status: true, message: result.msg, userDetails: result.userDetails });
+      } else {
+        res.send({ status: false, message: result.msg });
+      }
     } catch (error) {
-        console.log(error);
-        res.send({ "status": false, "message": error.msg });
+      console.log(error);
+      res.send({ status: false, message: error.msg });
     }
-}
+  };
+  
+
+
+// var loginUserControllerFn = async (req, res) => {
+//     var result = null;
+//     try {
+//         result = await studentService.loginuserDBService(req.body);
+//         if (result.status) {
+//             res.send({ "status": true, "message": result.msg });
+//         } else {
+//             res.send({ "status": false, "message": result.msg });
+//         }
+
+//     } catch (error) {
+//         console.log(error);
+//         res.send({ "status": false, "message": error.msg });
+//     }
+// }
 
 module.exports = { createStudentControllerFn,loginUserControllerFn };

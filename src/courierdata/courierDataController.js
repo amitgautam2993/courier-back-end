@@ -66,17 +66,53 @@ async function fetchDataWithinDateRange(req, res) {
         $lte: to,
       },
     });
+
     if (!result) {
-      res.status(404).json({ status:404,message: 'No Data Found For this date range',data:null });
+      res.status(404).json({ status: 404, message: 'No Data Found For this date range', data: null });
     } else {
-      res.status(200).json({status:200,message:'Success',data:result});
+      // Filter the courierDetails array based on the date range
+      const filteredCourierDetails = result.courierDetails.filter((item) => {
+        const itemDate = new Date(item.date);
+        return itemDate >= from && itemDate <= to;
+      });
+
+      // Update the result with the filtered courierDetails
+      result.courierDetails = filteredCourierDetails;
+
+      res.status(200).json({ status: 200, message: 'Success', data: result });
     }
-    
   } catch (err) {
-    // console.error('Error executing MongoDB query:', err);
-    res.status(500).json({ error:500,message: 'Internal server error' });
+    res.status(500).json({ error: 500, message: 'Internal server error' });
   }
 }
+
+
+
+// async function fetchDataWithinDateRange(req, res) {
+//   const id = req.params.id;
+//   const from = new Date(req.query.from);
+//   const to = new Date(req.query.to);
+
+//   try {
+//     // Execute the query
+//     const result = await CourierData.findOne({
+//       id: id,
+//       'courierDetails.date': {
+//         $gte: from,
+//         $lte: to,
+//       },
+//     });
+//     if (!result) {
+//       res.status(404).json({ status:404,message: 'No Data Found For this date range',data:null });
+//     } else {
+//       res.status(200).json({status:200,message:'Success',data:result});
+//     }
+    
+//   } catch (err) {
+//     // console.error('Error executing MongoDB query:', err);
+//     res.status(500).json({ error:500,message: 'Internal server error' });
+//   }
+// }
 
 
 

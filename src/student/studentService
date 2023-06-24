@@ -1,68 +1,118 @@
 var studentModel = require('./studentModel');
-var key = '123456789trytryrtyr';
+//var key = '123456789trytryrtyr';
+var key = 'Sanjayer2993@Abcdxyz123@'
 var encryptor = require('simple-encryptor')(key);
 
 module.exports.createStudentDBService = (studentDetails) => {
-
-
    return new Promise(function myFn(resolve, reject) {
-
-       var studentModelData = new studentModel();
-
-       studentModelData.firstname = studentDetails.firstname;
-       studentModelData.lastname = studentDetails.lastname;
-       studentModelData.email = studentDetails.email;
-       studentModelData.password = studentDetails.password;
-       var encrypted = encryptor.encrypt(studentDetails.password);
-       studentModelData.password = encrypted;
-
-       studentModelData.save(function resultHandle(error, result) {
-
-           if (error) {
+      if (!studentDetails.firstname ||
+         !studentDetails.lastname ||
+         !studentDetails.username ||
+         !studentDetails.password) {
+         reject(false);
+         return;
+     } 
+      studentModel.findOne({ username: studentDetails.username }, function (err, existingStudent) {
+           if (err) {
                reject(false);
-               console.log(error)
-           } else {
-               resolve(true);
+               console.log(err);
+               return;
            }
+           if (existingStudent) {
+               // Username already exists, reject the promise
+               resolve('Username Already Exists');
+
+               return;
+           }
+           var studentModelData = new studentModel();
+           studentModelData.organisation = studentDetails.organisation;
+           studentModelData.firstname = studentDetails.firstname;
+           studentModelData.lastname = studentDetails.lastname;
+           studentModelData.username = studentDetails.username;
+           studentModelData.branchcode = studentDetails.branchcode;
+           studentModelData.email = studentDetails.email;
+           studentModelData.address = studentDetails.address;
+           studentModelData.city = studentDetails.city;
+           studentModelData.state = studentDetails.state;
+           studentModelData.postalcode = studentDetails.postalcode;
+           studentModelData.country = studentDetails.country;
+           studentModelData.password = studentDetails.password;
+           var encrypted = encryptor.encrypt(studentDetails.password);
+           studentModelData.password = encrypted;
+           studentModelData.save(function resultHandle(error, result) {
+               if (error) {
+                   reject(false);
+                   console.log(error);
+               } else {
+                   resolve("User Created");
+               }
+           });
        });
-
-   });
-
-}
-
-module.exports.loginuserDBService = (studentDetails)=> 
-{
-   return new Promise(function myFn(resolve, reject) 
-   {
-      studentModel.findOne({ email: studentDetails.email},function getresult(errorvalue, result)
-      {
-         if(errorvalue)
-         {
-            reject({status: false, msg: "Invaild Data"});
-         }
-         else
-         {
-            if(result !=undefined &&  result !=null)
-            {
-               var decrypted = encryptor.decrypt(result.password);
-
-               if(decrypted== studentDetails.password)
-               {
-                  resolve({status: true,msg: "Student Validated Successfully"});
-               }
-               else
-               {
-                  reject({status: false,msg: "Student Validated failed"});
-               }
-            }
-            else
-            {
-               reject({status: false,msg: "Student Error Detailssss"});
-            }
-
-         }
-      
-      });
-      
    });
 }
+
+const { omit } = require('lodash'); // Import the lodash omit function
+
+module.exports.loginuserDBService = (studentDetails) => {
+  return new Promise(function myFn(resolve, reject) {
+    studentModel.findOne({ username: studentDetails.username }, function getresult(errorvalue, result) {
+      if (errorvalue) {
+        reject({ status: false, msg: "Invalid Data" });
+      } else {
+        if (result != undefined && result != null) {
+          var decrypted = encryptor.decrypt(result.password);
+
+          if (decrypted == studentDetails.password) {
+            // Omit the password field from the result before storing in local storage
+            var userDetails = omit(result.toObject(), 'password');
+
+            resolve({ status: true, msg: "Student Validated Successfully", userDetails: userDetails });
+          } else {
+            reject({ status: false, msg: "Student Validation Failed" });
+          }
+        } else {
+          reject({ status: false, msg: "Student Error Details" });
+        }
+      }
+    });
+  });
+}
+
+
+// module.exports.loginuserDBService = (studentDetails)=> 
+// {
+//    return new Promise(function myFn(resolve, reject) 
+//    {
+//       studentModel.findOne({ username: studentDetails.username},function getresult(errorvalue, result)
+//       {
+//          if(errorvalue)
+//          {
+//             reject({status: false, msg: "Invaild Data"});
+//          }
+//          else
+//          {
+//             if(result !=undefined &&  result !=null)
+//             {
+//                var decrypted = encryptor.decrypt(result.password);
+
+//                if(decrypted== studentDetails.password)
+//                {
+                 
+//                   resolve({status: true,msg: "Student Validated Successfully"});
+//                }
+//                else
+//                {
+//                   reject({status: false,msg: "Student Validated failed"});
+//                }
+//             }
+//             else
+//             {
+//                reject({status: false,msg: "Student Error Detailssss"});
+//             }
+
+//          }
+      
+//       });
+      
+//    });
+// }

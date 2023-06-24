@@ -2,30 +2,59 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var companiesDetailSchema = new Schema({
-
-    Companyname: {
+  username: {
+    type: String,
+    required: true
+  },
+  companies: [
+    {
+      company: {
         type: String,
         required: true
-    },
-    Ownername: {
+      },
+      firstname: {
         type: String,
         required: true
-    },
-    email: {
+      },
+      lastname: {
         type: String,
         required: true
-    },
-    address: {
+      },
+      address: {
         type: String,
         required: true
-    },
-    shippercode:{
+      },
+      shippercode: {
         type: String,
         required: true
-    },
-    companyid:{
-        type:String,
-        required:true
+      },
+     
+      email: {
+        type: String,
+        required: true
+      },
+      city: {
+        type: String,
+        required: true
+      },
+      state: {
+        type: String,
+        required: true
+      },
+      postalcode: {
+        type: Number,
+        required: true
+      },
+      country: {
+        type: String,
+        required: true
+      },
+      createDate: {
+        type: Date,
+        default: Date.now
+      },
     }
-})
+  ]
+});
+
 module.exports = mongoose.model('companiesDetail', companiesDetailSchema);
