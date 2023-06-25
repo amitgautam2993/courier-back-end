@@ -22,7 +22,11 @@
 
 // }
 
+const { reject } = require('lodash');
 const courierDataModel = require('./courierdataModel');
+
+
+module.exports = updateCourierDataService;
 
 module.exports.courierDataService = (id, courierDataDetail) => {
   return new Promise(function myFn(resolve, reject) {

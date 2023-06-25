@@ -31,26 +31,198 @@ async function createCourierDataFn(id, courierDataDetail) {
     return false; // Return false to indicate that the creation or update failed
   }
 }
+//duplicate error in same id
+// async function updateCourierDataFn(id, updatedCourierData) {
+//   try {
+//     // Find the courier data record with the specified ID
+//     let courierDataRecord = await CourierData.findOne({ 'courierDetails._id': id });
+//     if (courierDataRecord) {
+//       // Check for duplicate cnumber within courierDetails array
+//       const duplicateCno = courierDataRecord.courierDetails.some(detail => detail.cnumber === updatedCourierData.cnumber && detail._id.toString() !== id);
+//       if (duplicateCno) {
+//         console.log('Duplicate cno found');
+//         return 'duplicate';
+//       } else {
+//         // Update the courier details based on the provided data
+//         const courierDetailIndex = courierDataRecord.courierDetails.findIndex(detail => detail._id.toString() === id);
+//         courierDataRecord.courierDetails[courierDetailIndex] = { ...courierDataRecord.courierDetails[courierDetailIndex], ...updatedCourierData };
 
+//         await courierDataRecord.save();
+//         return true; // Return true to indicate that the update was successful
+//       }
+//     } else {
+//       console.log('Courier data record not found');
+//       return false; // Return false to indicate that the update failed
+//     }
+//   } catch (error) {
+//     console.error('Error:', error);
+//     return false; // Return false to indicate that the update failed
+//   }
+// }
 async function updateCourierDataFn(id, updatedCourierData) {
   try {
     // Find the courier data record with the specified ID
-    let courierDataRecord = await CourierData.findOne({ id: id });
+    let courierDataRecord = await CourierData.findOne({ 'courierDetails._id': id });
     if (courierDataRecord) {
-      // Update the courier details based on the provided data
-      courierDataRecord.courierDetails = updatedCourierData;
-      await courierDataRecord.save();
-      return true; // Return true to indicate that the update was successful
+      // Check if the updated cnumber already exists in another courierDetails record
+      const duplicateCno = await CourierData.exists({
+        _id: { $ne: courierDataRecord._id },
+        'courierDetails.cnumber': updatedCourierData.cnumber
+      });
+
+      if (duplicateCno) {
+        console.log('Duplicate cno found');
+        return 'duplicate';
+      } else {
+        // Update the courier details based on the provided data
+        const courierDetailIndex = courierDataRecord.courierDetails.findIndex(detail => detail._id.toString() === id);
+        courierDataRecord.courierDetails[courierDetailIndex] = { ...courierDataRecord.courierDetails[courierDetailIndex], ...updatedCourierData };
+
+        await courierDataRecord.save();
+        return true; // Return true to indicate that the update was successful
+      }
     } else {
       console.log('Courier data record not found');
       return false; // Return false to indicate that the update failed
     }
   } catch (error) {
-    console.log('Error:', error);
-    return false; // Return false to indicate that the update failed
+    if (error.name === 'ValidationError') {
+      console.error('Duplicate cno found');
+      return 'duplicate'; // Return false to indicate that the update failed due to validation error
+    } else {
+      console.error('Error:', error);
+      return false; // Return false to indicate that the update failed due to an unknown error
+    }
   }
 }
 
+
+
+
+//duplicate error in other id
+// async function updateCourierDataFn(id, updatedCourierData) {
+//   try {
+//     // Find the courier data record with the specified ID
+//     let courierDataRecord = await CourierData.findOne({ 'courierDetails._id': id });
+//     if (courierDataRecord) {
+//       // Update the courier details based on the provided data
+//       const courierDetailIndex = courierDataRecord.courierDetails.findIndex(detail => detail._id.toString() === id);
+//       const existingCno = courierDataRecord.courierDetails[courierDetailIndex].cnumber;
+
+//       // If the cnumber is being updated, check for duplicates within the remaining documents
+//       if (existingCno !== updatedCourierData.cnumber) {
+//         const remainingDuplicates = await CourierData.findOne({
+//           'courierDetails.cnumber': updatedCourierData.cnumber,
+//           _id: { $ne: courierDataRecord._id }
+//         });
+
+//         if (remainingDuplicates) {
+//           console.log('Duplicate cno found');
+//           return 'duplicate';
+//         }
+//       }
+
+//       // Bypass the validation during the update
+//       const options = { runValidators: false };
+//       courierDataRecord.courierDetails[courierDetailIndex] = { ...courierDataRecord.courierDetails[courierDetailIndex], ...updatedCourierData };
+
+//       await courierDataRecord.save(options);
+//       return true; // Return true to indicate that the update was successful
+//     } else {
+//       console.log('Courier data record not found');
+//       return false; // Return false to indicate that the update failed
+//     }
+//   } catch (error) {
+//     console.error('Error:', error);
+//     return false; // Return false to indicate that the update failed
+//   }
+// }
+
+
+
+
+// async function updateCourierDataFn(id, updatedCourierData) {
+//   try {
+//     // Find the courier data record with the specified ID
+//     let courierDataRecord = await CourierData.findOne({ 'courierDetails._id': id });
+//     if (courierDataRecord) {
+//       // Update the courier details based on the provided data
+//       const courierDetailIndex = courierDataRecord.courierDetails.findIndex(detail => detail._id.toString() === id);
+//       courierDataRecord.courierDetails[courierDetailIndex] = { ...courierDataRecord.courierDetails[courierDetailIndex], ...updatedCourierData };
+
+//       await courierDataRecord.save();
+//       return true; // Return true to indicate that the update was successful
+//     } else {
+//       console.log('Courier data record not found');
+//       return false; // Return false to indicate that the update failed
+//     }
+//   } catch (error) {
+//     if (error.name === 'ValidationError') {
+//       // Handling validation error specifically for the `courierDetails` field
+//       const duplicateError = Object.values(error.errors).find(err => err.path === 'courierDetails');
+//       if (duplicateError && duplicateError.kind === 'user defined' && duplicateError.message === 'Duplicate cno found') {
+//         console.log('Duplicate cno found');
+//         return 'duplicate';
+//       }
+//     }
+//     console.error('Error:', error);
+//     return false; // Return false to indicate that the update failed
+//   }
+// }
+
+
+
+
+
+
+
+// async function updateCourierDataFn(id, updatedCourierData) {
+//   try {
+//     // Find the courier data record with the specified ID
+//     let courierDataRecord = await CourierData.findOne({ 'courierDetails._id': id });
+//     if (courierDataRecord) {
+//       const existingData = await CourierData.findOne({ 'courierDetails.cnumber': updatedCourierData.cnumber });
+//       if (existingData) {
+//         console.log('Duplicate cno found');
+//         return 'duplicate';
+//       }
+//       else{
+//       // Update the courier details based on the provided data
+//       const courierDetailIndex = courierDataRecord.courierDetails.findIndex(detail => detail._id.toString() === id);
+//       courierDataRecord.courierDetails[courierDetailIndex] = { ...courierDataRecord.courierDetails[courierDetailIndex], ...updatedCourierData };
+
+//       //courierDataRecord.courierDetails = updatedCourierData;
+
+//       await courierDataRecord.save();
+//       return true; }// Return true to indicate that the update was successful
+//     } else {
+//       console.log('Courier data record not found');
+//       return false; // Return false to indicate that the update failed
+//     }
+//   } catch (error) {
+//     console.log('Error:', error);
+//     return false; // Return false to indicate that the update failed
+//   }
+// }
+
+async function deleteCourierDataById(id) {
+  try {
+    // Find the courier data record with the specified ID and remove it
+    const deletedCourierData = await CourierData.findOneAndUpdate({ 'courierDetails._id': id },
+    { $pull: { courierDetails: { _id: id } } },
+    { new: true });
+
+    if (deletedCourierData) {
+      return true; // Return true to indicate that the deletion was successful
+    } else {
+      console.log('Courier data record not found');
+      return false; // Return false to indicate that the deletion failed
+    }
+  } catch (error) {
+    console.log('Error:', error);
+    return false; // Return false to indicate that the deletion failed
+  }
+}
 
 async function fetchDataWithinDateRange(req, res) {
   const id = req.params.id;
@@ -117,7 +289,7 @@ async function fetchDataWithinDateRange(req, res) {
 
 
 
-module.exports = { createCourierDataFn,fetchDataWithinDateRange,updateCourierDataFn};
+module.exports = { createCourierDataFn,fetchDataWithinDateRange,updateCourierDataFn,deleteCourierDataById};
 
 
 

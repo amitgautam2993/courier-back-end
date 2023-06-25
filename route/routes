@@ -16,6 +16,24 @@ router.route('/companies/get').get(companiesDetailController.getompaniesDetailCo
 router.route('/companies/update/:companyId').put(companiesDetailController.updateCompaniesDetailControllerFn);
 router.get('/courierdata/daterange/:id', courierDataController.fetchDataWithinDateRange);
 
+// router.put('/courierdata/update/:id', async (req, res) => {
+//   const updateId = req.params.id;
+//   const updateData = req.body;
+
+//   try {
+//     const result = await updateCourierDataFn(updateId, updateData);
+//     if (result.success) {
+//       res.status(200).json({ message: result.message });
+//     } else {
+//       res.status(404).json({ message: result.message });
+//     }
+//   } catch (error) {
+//     console.log('hello')
+//     res.status(500).json({ message: 'Internal server error' });
+//   }
+// });
+
+
 router.post('/courierdata/create/:id', async (req, res) => {
   try {
     const id = req.params.id;
@@ -36,25 +54,49 @@ router.post('/courierdata/create/:id', async (req, res) => {
 
 
 
-// const { updateCourierDataFn } = courierDataController.updateCourierDataFn
+//const { updateCourierDataFn } = courierDataController.updateCourierDataFn
 
-// Define the route for updating courier data
-// router.put('/courierdata/update/:id', async (req, res) => {
-//   const id = req.params.id;
-//   const updatedCourierData = req.body; // Assuming the updated data is sent in the request body
+//Define the route for updating courier data
+router.put('/courierdata/update/:id', async (req, res) => {
+  const id = req.params.id;
+  const updatedCourierData = req.body; // Assuming the updated data is sent in the request body
 
-//   try {
-//     const success = await updateCourierDataFn(id, updatedCourierData);
-//     if (success) {
-//       res.status(200).json({ message: 'Courier data updated successfully' });
-//     } else {
-//       res.status(404).json({ message: 'Courier data record not found' });
-//     }
-//   } catch (error) {
-//     console.error('Error:', error);
-//     res.status(500).json({ message: 'Internal server error' });
-//   }
-// });
+  try {
+    const success = await courierDataController.updateCourierDataFn(id, updatedCourierData);
+    if (success === 'duplicate') {
+      res.status(404).json({ status: 404, message: 'Duplicate Consignment Number Found.' });
+    } else if (success === true) {
+      res.status(200).json({ status: 200, message: 'Courier data updated successfully' });
+    } else if (success === false) {
+      res.status(400).json({ status: 400, message: 'Courier data record not found' });
+    } else {
+      res.status(500).json({ status: 500, message: 'Internal server error' });
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    if (error.errors && error.errors['courierDetails.1.cnumber'] && error.errors['courierDetails.1.cnumber'].kind === 'user defined') {
+      res.status(404).json({ });
+    } else {
+      res.status(500).json({ status: 500, message: 'Internal server error' });
+    }
+  }
+});
+
+
+router.delete('/courierdata/delete/:id',async(req,res)=>{
+  const id =req.params.id
+  try{
+    const deletionResult = await courierDataController.deleteCourierDataById(id);
+    if (deletionResult) {
+      res.json({ success: true, message: 'Courier data deleted successfully' });
+    } else {
+      res.status(404).json({ success: false, message: 'Courier data not found' });
+    }
+  }
+  catch(error){
+    res.status(500).json({ success: false, message: 'Error deleting courier data' });
+  }
+});
 
 
 
