@@ -20,17 +20,35 @@ app.listen(9002,function check(err)
     console.log("started")
 });
 
-mongoose.connect("mongodb://localhost:27017/abc",{useNewUrlParser: true,  useUnifiedTopology: true },
+// const username = encodeURIComponent('gautamkutir');
+// const password = encodeURIComponent('abcdxyz123');
+// const mySchema = new mongoose.Schema({
+//   name: String
+// });
+
+// const MyModel = mongoose.model('MyModel', mySchema);
+
+mongoose.connect("mongodb://gautamkutir:abcdxyz123@192.168.0.198:27017/?authMechanism=DEFAULT",{useNewUrlParser: true,  useUnifiedTopology: true,dbName: 'track4u', },
 function checkDb(error)
 {
     if(error)
     {
         console.log("Error Connecting to DB");
+        console.log(error)
     }
     else
     {
         console.log("successfully Connected to DB");
+        
     }
 });
+
+// const mongoose = require('mongoose');
+
+
+// Saving a document to the database
+
+
+
 app.use(express.json());
 app.use(routes);

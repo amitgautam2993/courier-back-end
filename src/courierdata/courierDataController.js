@@ -207,13 +207,18 @@ async function updateCourierDataFn(id, updatedCourierData) {
 
 async function deleteCourierDataById(id) {
   try {
-    // Find the courier data record with the specified ID and remove it
-    const deletedCourierData = await CourierData.findOneAndUpdate({ 'courierDetails._id': id },
-    { $pull: { courierDetails: { _id: id } } },
-    { new: true });
+    const deletedCourierData = await CourierData.findOneAndUpdate(
+      { 'courierDetails._id': id },
+      { $pull: { courierDetails: { _id: id } } },
+      { new: true }
+    );
 
     if (deletedCourierData) {
-      return true; // Return true to indicate that the deletion was successful
+      if (deletedCourierData.courierDetails.length === 0) {
+        // If the courierDetails array is empty after deletion, remove the entire document
+        await CourierData.findOneAndRemove({ 'courierDetails._id': id });
+      }
+      return true; // Return true to indicate successful deletion
     } else {
       console.log('Courier data record not found');
       return false; // Return false to indicate that the deletion failed
@@ -223,6 +228,27 @@ async function deleteCourierDataById(id) {
     return false; // Return false to indicate that the deletion failed
   }
 }
+
+
+
+// async function deleteCourierDataById(id) {
+//   try {
+//     // Find the courier data record with the specified ID and remove it
+//     const deletedCourierData = await CourierData.findOneAndUpdate({ 'courierDetails._id': id },
+//     { $pull: { courierDetails: { _id: id } } },
+//     { new: true });
+
+//     if (deletedCourierData) {
+//       return true; // Return true to indicate that the deletion was successful
+//     } else {
+//       console.log('Courier data record not found');
+//       return false; // Return false to indicate that the deletion failed
+//     }
+//   } catch (error) {
+//     console.log('Error:', error);
+//     return false; // Return false to indicate that the deletion failed
+//   }
+// }
 
 async function fetchDataWithinDateRange(req, res) {
   const id = req.params.id;

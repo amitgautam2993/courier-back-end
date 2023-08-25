@@ -14,12 +14,16 @@ const courierDataSchema = new Schema({
       validate: {
         validator: function(cnumber) {
           const courierDetails = this.parent().courierDetails;
-          const currentIndex = this.parent().courierDetails.findIndex(detail => detail.cnumber === cnumber);
+          if (courierDetails.length === 0) {
+            return true; // Allow empty array
+          }
+          const currentIndex = courierDetails.findIndex(detail => detail.cnumber === cnumber);
           return currentIndex === -1 || courierDetails[currentIndex]._id.equals(this._id);
         },
         message: 'Duplicate cno found',
       },
     },
+    
     date: {
       type: Date,
       required: true
