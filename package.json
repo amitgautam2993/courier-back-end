@@ -2,22 +2,28 @@
   "name": "couriernode",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "dotenv -e .env.development node server.js",
+    "start:prod": "dotenv -e .env.production node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.4.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "lodash": "^4.17.21",
     "mongoose": "^6.9.1",
-    "nodemon": "^2.0.20",
     "simple-encrypter": "^0.0.6",
     "simple-encryptor": "^4.0.0"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^7.3.0",
+    "nodemon": "^3.0.1"
   }
 }
