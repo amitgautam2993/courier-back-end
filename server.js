@@ -64,8 +64,19 @@ const cors = require('cors');
 const app = express();
 
 // CORS settings: Use environment variable or fallback to the hardcoded URL
-const CORS_ORIGIN = process.env.CORS_ORIGIN || "http://192.168.0.198:80/";
-app.use(cors({ origin: CORS_ORIGIN }));
+const CORS_ORIGIN = process.env.CORS_ORIGIN || "http://localhost:4200";
+// app.use(cors({ origin: CORS_ORIGIN }));
+app.use(cors({
+  origin: CORS_ORIGIN,
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204
+}));
+// app.use((req, res, next) => {
+//   console.log(req.headers);
+//   next();
+// });
+
 
 const PORT = process.env.PORT || 9002;
 
@@ -86,6 +97,8 @@ const MONGO_DBNAME = process.env.MONGO_DBNAME || 'track4u';
 // ... other imports
 
 // MongoDB connection
+console.log(`CORS_ORIGIN is ${CORS_ORIGIN}`);
+
 console.log(`Running in ${process.env.NODE_ENV} environment.`);
 const MONGO_URI = process.env.MONGO_URI || `mongodb://${process.env.MONGO_USER}:${encodeURIComponent(process.env.MONGO_PASS)}@${process.env.MONGO_HOST}/?authMechanism=DEFAULT`;
 
@@ -94,6 +107,7 @@ const MONGO_URI = process.env.MONGO_URI || `mongodb://${process.env.MONGO_USER}:
 mongoose.connect(MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true, dbName: MONGO_DBNAME}, function(err) {
     if(err) {
         console.log("Error connecting to DB:", err);
+        process.exit(1);
     } else {
         console.log("Successfully connected to DB");
     }
