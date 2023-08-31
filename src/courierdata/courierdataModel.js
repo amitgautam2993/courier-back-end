@@ -56,6 +56,10 @@ const courierDataSchema = new Schema({
       type:String,
       required:true
     },
+    ewaybill:{
+      type:Number,
+      required:false
+    },
 
     createDate: {
       type: Date,
