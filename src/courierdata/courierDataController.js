@@ -273,7 +273,7 @@ async function fetchDataWithinDateRange(req, res) {
         const itemDate = new Date(item.date);
         return itemDate >= from && itemDate <= to;
       });
-
+      filteredCourierDetails.sort((a, b) => new Date(a.date) - new Date(b.date));
       // Update the result with the filtered courierDetails
       result.courierDetails = filteredCourierDetails;
 
