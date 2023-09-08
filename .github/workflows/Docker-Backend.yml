@@ -16,7 +16,7 @@ jobs:
       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
     - name: Build Docker Image
-      run: docker build -t amitgautam67/track4u_backend:latest .
+      run: docker build -t amitgautam67/track4u_backend:v1.0.0 .
 
     - name: Push Docker Image to Docker Hub
-      run: docker push amitgautam67/track4u_backend:latest
+      run: docker push amitgautam67/track4u_backend:v1.0.0
