@@ -7,10 +7,14 @@ var companiesDetailController = require('../src/companiesDetail/companiesDetailC
 var courierDataController = require('../src/courierdata/courierDataController')
 const router = express.Router();
 const fetchDataWithinDateRange = require('../src/courierdata/courierDataController');
+const codeController = require('../src/codesDetails/codesController');
 
+router.route('/courierdata/deepsearch').get(courierDataController.deepSearchCourierDataFn);
+router.route('/codes/abbreviation').get(codeController.checkAbbreviation);
+router.route('/codes/search').get(codeController.searchCodes);
+router.route('/codes/create').post(codeController.addCode);
 router.route('/student/login').post(studentController.loginUserControllerFn);
 router.route('/student/create').post(studentController.createStudentControllerFn);
-// router.route('/companies/create').post(companiesDetailController.createcompaniesDetailControllerFn);
 router.route('/companies/create/:username').post(companiesDetailController.createcompaniesDetailControllerFn);
 router.route('/companies/get').get(companiesDetailController.getompaniesDetailControllerFn);
 router.route('/companies/update/:companyId').put(companiesDetailController.updateCompaniesDetailControllerFn);
@@ -39,8 +43,11 @@ router.post('/courierdata/create/:id', async (req, res) => {
     const id = req.params.id;
     const data = req.body;
     const result = await courierDataController.createCourierDataFn(id, data);
-    if (result === 'duplicate') {
-      res.status(404).send({ status: 404, message: 'Duplicate Consignment Number Found.' });
+    if (result.status === 'duplicate') {
+      res.status(404).send({ status: 404, message: 'Duplicate Consignment Number Found',data: {
+        id: result.data.id,
+        courierDetails: result.data.courierDetails
+      } });
     } else if (result === true) {
       res.status(200).send({ status: 200, message: 'Courier data created Successfully.' });
     } else {

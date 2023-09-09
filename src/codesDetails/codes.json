@@ -1,0 +1,3684 @@
+{
+    "data": [
+        {
+            "name": "ABU ROAD",
+            "code": "ABR",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "ADAMPUR",
+            "code": "ADP",
+            "state": "Punjab"
+        },
+        {
+            "name": "ADDANKI",
+            "code": "ADK",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "ADILABAD",
+            "code": "ADB",
+            "state": "Telangana"
+        },
+        {
+            "name": "ADIMALLY",
+            "code": "ADM",
+            "state": "Kerala"
+        },
+        {
+            "name": "ADONI",
+            "code": "ADN",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "ADOOR",
+            "code": "ADR",
+            "state": "Kerala"
+        },
+        {
+            "name": "AFZALPUR",
+            "code": "AFP",
+            "state": "Karnataka"
+        },
+        {
+            "name": "AGAR MALWA",
+            "code": "AGM",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "AGARTALA",
+            "code": "IXA",
+            "state": "Tripura"
+        },
+        {
+            "name": "AGRA",
+            "code": "AGR",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "AGRA HUB",
+            "code": "AGX",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "AHMEDABAD",
+            "code": "AMD",
+            "state": "Gujarat"
+        },
+        {
+            "name": "AHMEDNAGAR",
+            "code": "ANR",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "AHMEDPUR",
+            "code": "AHP",
+            "state": "West Bengal"
+        },
+        {
+            "name": "AIZAWL",
+            "code": "AZL",
+            "state": "Mizoram"
+        },
+        {
+            "name": "AJMER",
+            "code": "AJR",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "AKIVIDU",
+            "code": "AKV",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "AKKALKOT",
+            "code": "AKT",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "AKLUJ",
+            "code": "AKJ",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "AKOLA",
+            "code": "AKL",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "AKOT",
+            "code": "AOT",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "ALAND",
+            "code": "ALN",
+            "state": "Karnataka"
+        },
+        {
+            "name": "ALIBAG",
+            "code": "ABH",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "ALIGARH",
+            "code": "AGH",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "ALIPURDUAR",
+            "code": "APD",
+            "state": "West Bengal"
+        },
+        {
+            "name": "ALLAHABAD",
+            "code": "ALD",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "ALLEPPY",
+            "code": "APY",
+            "state": "Kerala"
+        },
+        {
+            "name": "ALWAR",
+            "code": "ALW",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "ALWAYE",
+            "code": "AWY",
+            "state": "Kerala"
+        },
+        {
+            "name": "AMALNER",
+            "code": "AMN",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "AMARAVATI",
+            "code": "AMI",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "AMBIKAPUR",
+            "code": "APR",
+            "state": "Chhattisgarh"
+        },
+        {
+            "name": "AMBUR",
+            "code": "ABU",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "AMRAVATI",
+            "code": "AMI",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "AMRELI",
+            "code": "AMR",
+            "state": "Gujarat"
+        },
+        {
+            "name": "AMRITSAR",
+            "code": "ASR",
+            "state": "Punjab"
+        },
+        {
+            "name": "ANAKAPALLE",
+            "code": "AKP",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "ANAND",
+            "code": "AND",
+            "state": "Gujarat"
+        },
+        {
+            "name": "ANANTAPUR",
+            "code": "ANP",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "ANDHERI",
+            "code": "AHD",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "ANGUL",
+            "code": "ANGL",
+            "state": "Odisha"
+        },
+        {
+            "name": "ANJAR",
+            "code": "AJR",
+            "state": "Gujarat"
+        },
+        {
+            "name": "ANNA SALAI",
+            "code": "ANN",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "ARAKKONAM",
+            "code": "AKM",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "ARANI",
+            "code": "ARN",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "ARIYALUR",
+            "code": "ALU",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "ARUPPUKKOTTAI",
+            "code": "APP",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "ASANSOL",
+            "code": "ASN",
+            "state": "West Bengal"
+        },
+        {
+            "name": "ATPADI",
+            "code": "ATD",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "ATTUR",
+            "code": "ATT",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "AURANGABAD",
+            "code": "AUR",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "AURANGABAD",
+            "code": "AUB",
+            "state": "Bihar"
+        },
+        {
+            "name": "AVINASHI",
+            "code": "AVI",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "AZAMGARH",
+            "code": "AZG",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "BADAMI",
+            "code": "BDM",
+            "state": "Karnataka"
+        },
+        {
+            "name": "BADDI",
+            "code": "BDI",
+            "state": "Himachal Pradesh"
+        },
+        {
+            "name": "BADLAPUR",
+            "code": "BPL",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "BAGALKOT",
+            "code": "BGK",
+            "state": "Karnataka"
+        },
+        {
+            "name": "BAHADURGARH",
+            "code": "BHD",
+            "state": "Haryana"
+        },
+        {
+            "name": "BAHRAICH",
+            "code": "BHR",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "BALASORE",
+            "code": "BLS",
+            "state": "Odisha"
+        },
+        {
+            "name": "BALLIA",
+            "code": "BLL",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "BALRAMPUR",
+            "code": "BLR",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "BANGALORE",
+            "code": "BNG",
+            "state": "Karnataka"
+        },
+        {
+            "name": "BANKURA",
+            "code": "BNK",
+            "state": "West Bengal"
+        },
+        {
+            "name": "BANSWARA",
+            "code": "BSW",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "BAPATLA",
+            "code": "BPT",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "BARAMATI",
+            "code": "BRM",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "BARAN",
+            "code": "BRN",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "BARDHAMAN",
+            "code": "BRD",
+            "state": "West Bengal"
+        },
+        {
+            "name": "BAREILLY",
+            "code": "BLY",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "BARGARH",
+            "code": "BRG",
+            "state": "Odisha"
+        },
+        {
+            "name": "BARIPADA",
+            "code": "BPD",
+            "state": "Odisha"
+        },
+        {
+            "name": "BARNALA",
+            "code": "BNN",
+            "state": "Punjab"
+        },
+        {
+            "name": "BARODA",
+            "code": "BRD",
+            "state": "Gujarat"
+        },
+        {
+            "name": "BARRACKPORE",
+            "code": "BRK",
+            "state": "West Bengal"
+        },
+        {
+            "name": "BARWANI",
+            "code": "BWN",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "BASIRHAT",
+            "code": "BST",
+            "state": "West Bengal"
+        },
+        {
+            "name": "BASTI",
+            "code": "BST",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "BATALA",
+            "code": "BTL",
+            "state": "Punjab"
+        },
+        {
+            "name": "BATHINDA",
+            "code": "BTI",
+            "state": "Punjab"
+        },
+        {
+            "name": "BEAWAR",
+            "code": "BEW",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "BEGUSARAI",
+            "code": "BGS",
+            "state": "Bihar"
+        },
+        {
+            "name": "BELGAUM",
+            "code": "BLG",
+            "state": "Karnataka"
+        },
+        {
+            "name": "BELLARY",
+            "code": "BRY",
+            "state": "Karnataka"
+        },
+        {
+            "name": "BETTIAH",
+            "code": "BTH",
+            "state": "Bihar"
+        },
+        {
+            "name": "BHADRAK",
+            "code": "BDK",
+            "state": "Odisha"
+        },
+        {
+            "name": "BHAGALPUR",
+            "code": "BGP",
+            "state": "Bihar"
+        },
+        {
+            "name": "BHANDARA",
+            "code": "BHN",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "BHARATPUR",
+            "code": "BTP",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "BHARUCH",
+            "code": "BRH",
+            "state": "Gujarat"
+        },
+        {
+            "name": "BHATINDA",
+            "code": "BTI",
+            "state": "Punjab"
+        },
+        {
+            "name": "BHATPARA",
+            "code": "BTP",
+            "state": "West Bengal"
+        },
+        {
+            "name": "BHAVNAGAR",
+            "code": "BVR",
+            "state": "Gujarat"
+        },
+        {
+            "name": "BHILAI",
+            "code": "BHI",
+            "state": "Chhattisgarh"
+        },
+        {
+            "name": "BHILWARA",
+            "code": "BLW",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "BHIMAVARAM",
+            "code": "BVR",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "BHIND",
+            "code": "BND",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "BHIWANI",
+            "code": "BWN",
+            "state": "Haryana"
+        },
+        {
+            "name": "BHOPAL",
+            "code": "BPL",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "BHUBANESWAR",
+            "code": "BBR",
+            "state": "Odisha"
+        },
+        {
+            "name": "BIDAR",
+            "code": "BDR",
+            "state": "Karnataka"
+        },
+        {
+            "name": "BIHAR SHARIF",
+            "code": "BRS",
+            "state": "Bihar"
+        },
+        {
+            "name": "BIJAPUR",
+            "code": "BJP",
+            "state": "Karnataka"
+        },
+        {
+            "name": "BIJNOR",
+            "code": "BJR",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "BIKANER",
+            "code": "BKN",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "BILASPUR",
+            "code": "BSP",
+            "state": "Chhattisgarh"
+        },
+        {
+            "name": "BINA",
+            "code": "BIN",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "BIRBHUM",
+            "code": "BBM",
+            "state": "West Bengal"
+        },
+        {
+            "name": "BOKARO",
+            "code": "BKO",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "BONGAIGAON",
+            "code": "BGN",
+            "state": "Assam"
+        },
+        {
+            "name": "BULDHANA",
+            "code": "BLD",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "BUNDI",
+            "code": "BND",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "BURHANPUR",
+            "code": "BHR",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "BUXAR",
+            "code": "BXR",
+            "state": "Bihar"
+        },
+        {
+            "name": "CALICUT",
+            "code": "CLT",
+            "state": "Kerala"
+        },
+        {
+            "name": "CHAMARAJANAGAR",
+            "code": "CMR",
+            "state": "Karnataka"
+        },
+        {
+            "name": "CHAMBA",
+            "code": "CMB",
+            "state": "Himachal Pradesh"
+        },
+        {
+            "name": "CHANDAULI",
+            "code": "CDL",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "CHANDIGARH",
+            "code": "CHD",
+            "state": "Chandigarh"
+        },
+        {
+            "name": "CHANDRAPUR",
+            "code": "CPR",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "CHENNAI",
+            "code": "CHN",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "CHHATARPUR",
+            "code": "CTR",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "CHHINDWARA",
+            "code": "CWA",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "CHIKBALLAPUR",
+            "code": "CKB",
+            "state": "Karnataka"
+        },
+        {
+            "name": "CHIKMAGALUR",
+            "code": "CKM",
+            "state": "Karnataka"
+        },
+        {
+            "name": "CHITRADURGA",
+            "code": "CTG",
+            "state": "Karnataka"
+        },
+        {
+            "name": "CHITTOOR",
+            "code": "CTR",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "CHURU",
+            "code": "CUR",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "COIMBATORE",
+            "code": "CBE",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "CUDDALORE",
+            "code": "CDR",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "CUTTACK",
+            "code": "CTK",
+            "state": "Odisha"
+        },
+        {
+            "name": "DADRA & NAGAR HAVELI",
+            "code": "DNH",
+            "state": "Dadra and Nagar Haveli"
+        },
+        {
+            "name": "DAHOD",
+            "code": "DHD",
+            "state": "Gujarat"
+        },
+        {
+            "name": "DAKSHINA KANNADA",
+            "code": "DKK",
+            "state": "Karnataka"
+        },
+        {
+            "name": "DAMAN",
+            "code": "DMN",
+            "state": "Daman and Diu"
+        },
+        {
+            "name": "DARBHANGA",
+            "code": "DBG",
+            "state": "Bihar"
+        },
+        {
+            "name": "DATIA",
+            "code": "DTA",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "DAUSA",
+            "code": "DSA",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "DAVANGERE",
+            "code": "DVG",
+            "state": "Karnataka"
+        },
+        {
+            "name": "DEHRADUN",
+            "code": "DDN",
+            "state": "Uttarakhand"
+        },
+        {
+            "name": "DELHI",
+            "code": "DLH",
+            "state": "Delhi"
+        },
+        {
+            "name": "DEOGHAR",
+            "code": "DGR",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "DEORIA",
+            "code": "DER",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "DEWAS",
+            "code": "DWS",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "DHALAI",
+            "code": "DHL",
+            "state": "Tripura"
+        },
+        {
+            "name": "DHAMTARI",
+            "code": "DMT",
+            "state": "Chhattisgarh"
+        },
+        {
+            "name": "DHANBAD",
+            "code": "DHB",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "DHAR",
+            "code": "DHR",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "DHARMAPURI",
+            "code": "DPI",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "DHARWAD",
+            "code": "DWD",
+            "state": "Karnataka"
+        },
+        {
+            "name": "DHEMAJI",
+            "code": "DMJ",
+            "state": "Assam"
+        },
+        {
+            "name": "DHENKANAL",
+            "code": "DNL",
+            "state": "Odisha"
+        },
+        {
+            "name": "DHOLPUR",
+            "code": "DPL",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "DHUBRI",
+            "code": "DBR",
+            "state": "Assam"
+        },
+        {
+            "name": "DHULE",
+            "code": "DHL",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "DIBRUGARH",
+            "code": "DIB",
+            "state": "Assam"
+        },
+        {
+            "name": "DIMAPUR",
+            "code": "DMR",
+            "state": "Nagaland"
+        },
+        {
+            "name": "DINDIGUL",
+            "code": "DGL",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "DINDORI",
+            "code": "DNI",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "DOHAD",
+            "code": "DOH",
+            "state": "Gujarat"
+        },
+        {
+            "name": "DUMKA",
+            "code": "DMK",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "DUNGARPUR",
+            "code": "DGP",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "DURG",
+            "code": "DUR",
+            "state": "Chhattisgarh"
+        },
+        {
+            "name": "EAST CHAMPARAN",
+            "code": "ECR",
+            "state": "Bihar"
+        },
+        {
+            "name": "EAST DELHI",
+            "code": "EDL",
+            "state": "Delhi"
+        },
+        {
+            "name": "EAST GARO HILLS",
+            "code": "EGH",
+            "state": "Meghalaya"
+        },
+        {
+            "name": "EAST GODAVARI",
+            "code": "EGD",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "EAST JAINTIA HILLS",
+            "code": "EJH",
+            "state": "Meghalaya"
+        },
+        {
+            "name": "EAST KAMENG",
+            "code": "EKM",
+            "state": "Arunachal Pradesh"
+        },
+        {
+            "name": "EAST KHASI HILLS",
+            "code": "EKH",
+            "state": "Meghalaya"
+        },
+        {
+            "name": "EAST SIANG",
+            "code": "ESG",
+            "state": "Arunachal Pradesh"
+        },
+        {
+            "name": "EAST SIKKIM",
+            "code": "ESK",
+            "state": "Sikkim"
+        },
+        {
+            "name": "EAST SINGHBHUM",
+            "code": "ESB",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "ERNAKULAM",
+            "code": "ERN",
+            "state": "Kerala"
+        },
+        {
+            "name": "ERODE",
+            "code": "ERD",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "ETAH",
+            "code": "ETA",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "ETAWAH",
+            "code": "ETW",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "FAIZABAD",
+            "code": "FZD",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "FARIDABAD",
+            "code": "FBD",
+            "state": "Haryana"
+        },
+        {
+            "name": "FARIDKOT",
+            "code": "FDK",
+            "state": "Punjab"
+        },
+        {
+            "name": "FARRUKHABAD",
+            "code": "FKB",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "FATEHGARH SAHIB",
+            "code": "FTH",
+            "state": "Punjab"
+        },
+        {
+            "name": "FATEHPUR",
+            "code": "FTP",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "FIROZABAD",
+            "code": "FZB",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "FIROZEPUR",
+            "code": "FZR",
+            "state": "Punjab"
+        },
+        {
+            "name": "GADAG",
+            "code": "GAD",
+            "state": "Karnataka"
+        },
+        {
+            "name": "GADCHIROLI",
+            "code": "GCR",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "GAJAPATI",
+            "code": "GJP",
+            "state": "Odisha"
+        },
+        {
+            "name": "GANDERBAL",
+            "code": "GDR",
+            "state": "Jammu and Kashmir"
+        },
+        {
+            "name": "GANDHINAGAR",
+            "code": "GNG",
+            "state": "Gujarat"
+        },
+        {
+            "name": "GANGANAGAR",
+            "code": "GGR",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "GANGTOK",
+            "code": "GTK",
+            "state": "Sikkim"
+        },
+        {
+            "name": "GANJAM",
+            "code": "GNJ",
+            "state": "Odisha"
+        },
+        {
+            "name": "GARHWA",
+            "code": "GRH",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "GARHWAL",
+            "code": "GRW",
+            "state": "Uttarakhand"
+        },
+        {
+            "name": "GAUTAM BUDDHA NAGAR",
+            "code": "GBN",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "GAUTAMBUDDHA NAGAR",
+            "code": "GBT",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "GAYA",
+            "code": "GYA",
+            "state": "Bihar"
+        },
+        {
+            "name": "GHAZIABAD",
+            "code": "GZB",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "GHAZIPUR",
+            "code": "GZP",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "GIRIDIH",
+            "code": "GIR",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "GOALPARA",
+            "code": "GLP",
+            "state": "Assam"
+        },
+        {
+            "name": "GODDA",
+            "code": "GOD",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "GOLAGHAT",
+            "code": "GLT",
+            "state": "Assam"
+        },
+        {
+            "name": "GOMATI",
+            "code": "GMT",
+            "state": "Tripura"
+        },
+        {
+            "name": "GONDIA",
+            "code": "GND",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "GONDA",
+            "code": "GDA",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "GONDIYA",
+            "code": "GNY",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "GONDIA",
+            "code": "GOI",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "GOPALGANJ",
+            "code": "GPJ",
+            "state": "Bihar"
+        },
+        {
+            "name": "GORAKHPUR",
+            "code": "GKP",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "GULBARGA",
+            "code": "GLB",
+            "state": "Karnataka"
+        },
+        {
+            "name": "GUMBA",
+            "code": "GUM",
+            "state": "Manipur"
+        },
+        {
+            "name": "GUMDUM",
+            "code": "GDM",
+            "state": "West Bengal"
+        },
+        {
+            "name": "GUNA",
+            "code": "GNA",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "GUNTUR",
+            "code": "GNT",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "GURDASPUR",
+            "code": "GSP",
+            "state": "Punjab"
+        },
+        {
+            "name": "GURGAON",
+            "code": "GGN",
+            "state": "Haryana"
+        },
+        {
+            "name": "GUWAHATI",
+            "code": "GHT",
+            "state": "Assam"
+        },
+        {
+            "name": "GWALIOR",
+            "code": "GWL",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "HAILAKANDI",
+            "code": "HLK",
+            "state": "Assam"
+        },
+        {
+            "name": "HAMIRPUR",
+            "code": "HMR",
+            "state": "Himachal Pradesh"
+        },
+        {
+            "name": "HANUMANGARH",
+            "code": "HMG",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "HAPUR",
+            "code": "HAP",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "HARDA",
+            "code": "HDA",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "HARDOI",
+            "code": "HDO",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "HARIDWAR",
+            "code": "HRD",
+            "state": "Uttarakhand"
+        },
+        {
+            "name": "HASSAN",
+            "code": "HSN",
+            "state": "Karnataka"
+        },
+        {
+            "name": "HAVERI",
+            "code": "HAV",
+            "state": "Karnataka"
+        },
+        {
+            "name": "HAZARIBAGH",
+            "code": "HZB",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "HISAR",
+            "code": "HSR",
+            "state": "Haryana"
+        },
+        {
+            "name": "HOOGHLY",
+            "code": "HGL",
+            "state": "West Bengal"
+        },
+        {
+            "name": "HOSHANGABAD",
+            "code": "HBD",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "HOSHIARPUR",
+            "code": "HSP",
+            "state": "Punjab"
+        },
+        {
+            "name": "HOWRAH",
+            "code": "HWR",
+            "state": "West Bengal"
+        },
+        {
+            "name": "HUBLI",
+            "code": "HBL",
+            "state": "Karnataka"
+        },
+        {
+            "name": "HYDERABAD",
+            "code": "HYD",
+            "state": "Telangana"
+        },
+        {
+            "name": "IDUKKI",
+            "code": "IDK",
+            "state": "Kerala"
+        },
+        {
+            "name": "IMPHAL",
+            "code": "IMP",
+            "state": "Manipur"
+        },
+        {
+            "name": "INDORE",
+            "code": "IDR",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "ITANAGAR",
+            "code": "ITN",
+            "state": "Arunachal Pradesh"
+        },
+        {
+            "name": "JABALPUR",
+            "code": "JBP",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "JAGATSINGHAPUR",
+            "code": "JSP",
+            "state": "Odisha"
+        },
+        {
+            "name": "JAIPUR",
+            "code": "JPR",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "JAISALMER",
+            "code": "JSM",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "JALANDHAR",
+            "code": "JLD",
+            "state": "Punjab"
+        },
+        {
+            "name": "JALAUN",
+            "code": "JLN",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "JALGAON",
+            "code": "JGN",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "JALNA",
+            "code": "JLA",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "JALPAIGURI",
+            "code": "JPG",
+            "state": "West Bengal"
+        },
+        {
+            "name": "JAMMU",
+            "code": "JMU",
+            "state": "Jammu and Kashmir"
+        },
+        {
+            "name": "JAMNAGAR",
+            "code": "JMN",
+            "state": "Gujarat"
+        },
+        {
+            "name": "JAMSHEDPUR",
+            "code": "JSP",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "JAMUI",
+            "code": "JMU",
+            "state": "Bihar"
+        },
+        {
+            "name": "JANJGIR",
+            "code": "JNJ",
+            "state": "Chhattisgarh"
+        },
+        {
+            "name": "JASHPUR",
+            "code": "JSP",
+            "state": "Chhattisgarh"
+        },
+        {
+            "name": "JAUNPUR",
+            "code": "JNP",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "JEYPORE",
+            "code": "JYP",
+            "state": "Odisha"
+        },
+        {
+            "name": "JHANSI",
+            "code": "JHS",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "JHARSUGUDA",
+            "code": "JSG",
+            "state": "Odisha"
+        },
+        {
+            "name": "JHUNJHUNU",
+            "code": "JJN",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "JODHPUR",
+            "code": "JDR",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "JORHAT",
+            "code": "JRT",
+            "state": "Assam"
+        },
+        {
+            "name": "JUNAGADH",
+            "code": "JND",
+            "state": "Gujarat"
+        },
+        {
+            "name": "KADAPA",
+            "code": "KDP",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "KAITHAL",
+            "code": "KTL",
+            "state": "Haryana"
+        },
+        {
+            "name": "KAKINADA",
+            "code": "KKN",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "KALIMPONG",
+            "code": "KPG",
+            "state": "West Bengal"
+        },
+        {
+            "name": "KALLAKURICHI",
+            "code": "KKI",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "KAMRUP",
+            "code": "KMR",
+            "state": "Assam"
+        },
+        {
+            "name": "KANCHIPURAM",
+            "code": "KCM",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "KANPUR",
+            "code": "KNP",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "KAPURTHALA",
+            "code": "KPL",
+            "state": "Punjab"
+        },
+        {
+            "name": "KARAIKAL",
+            "code": "KKL",
+            "state": "Puducherry"
+        },
+        {
+            "name": "KARBI ANGLONG",
+            "code": "KBI",
+            "state": "Assam"
+        },
+        {
+            "name": "KARGIL",
+            "code": "KGL",
+            "state": "Ladakh"
+        },
+        {
+            "name": "KARNAL",
+            "code": "KNL",
+            "state": "Haryana"
+        },
+        {
+            "name": "KARUR",
+            "code": "KRR",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "KASGANJ",
+            "code": "KSG",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "KASARAGOD",
+            "code": "KSD",
+            "state": "Kerala"
+        },
+        {
+            "name": "KATHUA",
+            "code": "KTH",
+            "state": "Jammu and Kashmir"
+        },
+        {
+            "name": "KATNI",
+            "code": "KTN",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "KAUSHAMBI",
+            "code": "KSM",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "KENDRAPARA",
+            "code": "KDP",
+            "state": "Odisha"
+        },
+        {
+            "name": "KENDUJHAR",
+            "code": "KDJ",
+            "state": "Odisha"
+        },
+        {
+            "name": "KHAMMAM",
+            "code": "KMM",
+            "state": "Telangana"
+        },
+        {
+            "name": "KHARGONE",
+            "code": "KGN",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "KHERI",
+            "code": "KRI",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "KHORDHA",
+            "code": "KHD",
+            "state": "Odisha"
+        },
+        {
+            "name": "KHOWAI",
+            "code": "KHW",
+            "state": "Tripura"
+        },
+        {
+            "name": "KHUNTI",
+            "code": "KHT",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "KIPHIRE",
+            "code": "KPF",
+            "state": "Nagaland"
+        },
+        {
+            "name": "KISHANGANJ",
+            "code": "KSG",
+            "state": "Bihar"
+        },
+        {
+            "name": "KODAGU",
+            "code": "KDG",
+            "state": "Karnataka"
+        },
+        {
+            "name": "KODERMA",
+            "code": "KDR",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "KOHIMA",
+            "code": "KHM",
+            "state": "Nagaland"
+        },
+        {
+            "name": "KOKRAJHAR",
+            "code": "KKJ",
+            "state": "Assam"
+        },
+        {
+            "name": "KOLLAM",
+            "code": "KLM",
+            "state": "Kerala"
+        },
+        {
+            "name": "KOPPAL",
+            "code": "KPL",
+            "state": "Karnataka"
+        },
+        {
+            "name": "KORAPUT",
+            "code": "KPT",
+            "state": "Odisha"
+        },
+        {
+            "name": "KORBA",
+            "code": "KRB",
+            "state": "Chhattisgarh"
+        },
+        {
+            "name": "KOTTAYAM",
+            "code": "KTM",
+            "state": "Kerala"
+        },
+        {
+            "name": "KOZHIKODE",
+            "code": "KZK",
+            "state": "Kerala"
+        },
+        {
+            "name": "KRISHNA",
+            "code": "KSN",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "KULGAM",
+            "code": "KLG",
+            "state": "Jammu and Kashmir"
+        },
+        {
+            "name": "KULLU",
+            "code": "KLU",
+            "state": "Himachal Pradesh"
+        },
+        {
+            "name": "KUPWARA",
+            "code": "KUP",
+            "state": "Jammu and Kashmir"
+        },
+        {
+            "name": "KURNOOL",
+            "code": "KNL",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "KURUKSHETRA",
+            "code": "KKS",
+            "state": "Haryana"
+        },
+        {
+            "name": "KUSHINAGAR",
+            "code": "KSN",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "LAKHIMPUR",
+            "code": "LPR",
+            "state": "Assam"
+        },
+        {
+            "name": "LAKHISARAI",
+            "code": "LSR",
+            "state": "Bihar"
+        },
+        {
+            "name": "LALITPUR",
+            "code": "LTP",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "LATEHAR",
+            "code": "LTR",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "LATUR",
+            "code": "LTR",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "LEH",
+            "code": "LEH",
+            "state": "Ladakh"
+        },
+        {
+            "name": "LONGDING",
+            "code": "LNG",
+            "state": "Arunachal Pradesh"
+        },
+        {
+            "name": "LONGLENG",
+            "code": "LGL",
+            "state": "Nagaland"
+        },
+        {
+            "name": "LOHARDAGA",
+            "code": "LHD",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "LOHIT",
+            "code": "LHT",
+            "state": "Arunachal Pradesh"
+        },
+        {
+            "name": "LUCKNOW",
+            "code": "LKN",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "LUDHIANA",
+            "code": "LDH",
+            "state": "Punjab"
+        },
+        {
+            "name": "MADHEPURA",
+            "code": "MDP",
+            "state": "Bihar"
+        },
+        {
+            "name": "MADHUBANI",
+            "code": "MDB",
+            "state": "Bihar"
+        },
+        {
+            "name": "MADURAI",
+            "code": "MDU",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "MAHBUBNAGAR",
+            "code": "MBN",
+            "state": "Telangana"
+        },
+        {
+            "name": "MAHENDRAGARH",
+            "code": "MHR",
+            "state": "Haryana"
+        },
+        {
+            "name": "MAHESANA",
+            "code": "MSN",
+            "state": "Gujarat"
+        },
+        {
+            "name": "MAHOBA",
+            "code": "MHB",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "MAINPURI",
+            "code": "MPR",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "MALAPPURAM",
+            "code": "MLP",
+            "state": "Kerala"
+        },
+        {
+            "name": "MALDA",
+            "code": "MLD",
+            "state": "West Bengal"
+        },
+        {
+            "name": "MALKANGIRI",
+            "code": "MKR",
+            "state": "Odisha"
+        },
+        {
+            "name": "MAMIT",
+            "code": "MMT",
+            "state": "Mizoram"
+        },
+        {
+            "name": "MANDI",
+            "code": "MND",
+            "state": "Himachal Pradesh"
+        },
+        {
+            "name": "MANDLA",
+            "code": "MDL",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "MANDSAUR",
+            "code": "MSR",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "MANDYA",
+            "code": "MDY",
+            "state": "Karnataka"
+        },
+        {
+            "name": "MANSA",
+            "code": "MSA",
+            "state": "Punjab"
+        },
+        {
+            "name": "MATHURA",
+            "code": "MTR",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "MAU",
+            "code": "MAU",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "MAYURBHANJ",
+            "code": "MYB",
+            "state": "Odisha"
+        },
+        {
+            "name": "MEERUT",
+            "code": "MRT",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "MEWAT",
+            "code": "MWT",
+            "state": "Haryana"
+        },
+        {
+            "name": "MIRZAPUR",
+            "code": "MZP",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "MIZORAM",
+            "code": "MZM",
+            "state": "Mizoram"
+        },
+        {
+            "name": "MORADABAD",
+            "code": "MBD",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "MORENA",
+            "code": "MRN",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "MUMBAI",
+            "code": "MBI",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "MUNGER",
+            "code": "MGR",
+            "state": "Bihar"
+        },
+        {
+            "name": "MURSHIDABAD",
+            "code": "MSD",
+            "state": "West Bengal"
+        },
+        {
+            "name": "MUZAFFARNAGAR",
+            "code": "MZN",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "MUZAFFARPUR",
+            "code": "MZP",
+            "state": "Bihar"
+        },
+        {
+            "name": "MYSORE",
+            "code": "MYS",
+            "state": "Karnataka"
+        },
+        {
+            "name": "NAGAON",
+            "code": "NGN",
+            "state": "Assam"
+        },
+        {
+            "name": "NAGAPATTINAM",
+            "code": "NGM",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "NAGAUR",
+            "code": "NGR",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "NAGPUR",
+            "code": "NGP",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "NAINITAL",
+            "code": "NTL",
+            "state": "Uttarakhand"
+        },
+        {
+            "name": "NALANDA",
+            "code": "NLD",
+            "state": "Bihar"
+        },
+        {
+            "name": "NALBARI",
+            "code": "NBR",
+            "state": "Assam"
+        },
+        {
+            "name": "NAMAKKAL",
+            "code": "NMK",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "NANDED",
+            "code": "NDD",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "NANDURBAR",
+            "code": "NNB",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "NARAYANPUR",
+            "code": "NYP",
+            "state": "Chhattisgarh"
+        },
+        {
+            "name": "NARMADA",
+            "code": "NRM",
+            "state": "Gujarat"
+        },
+        {
+            "name": "NARSINGHPUR",
+            "code": "NSP",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "NASHIK",
+            "code": "NSK",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "NAVSARI",
+            "code": "NVS",
+            "state": "Gujarat"
+        },
+        {
+            "name": "NAYAGARH",
+            "code": "NYG",
+            "state": "Odisha"
+        },
+        {
+            "name": "NEEMUCH",
+            "code": "NMH",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "NELLORE",
+            "code": "NLR",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "NEW DELHI",
+            "code": "NDL",
+            "state": "Delhi"
+        },
+        {
+            "name": "NICOBAR",
+            "code": "NCB",
+            "state": "Andaman and Nicobar Islands"
+        },
+        {
+            "name": "NILGIRIS",
+            "code": "NLG",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "NIZAMABAD",
+            "code": "NZB",
+            "state": "Telangana"
+        },
+        {
+            "name": "NOIDA",
+            "code": "NDA",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "NORTH 24 PARGANAS",
+            "code": "N24",
+            "state": "West Bengal"
+        },
+        {
+            "name": "NORTH CACHAR HILLS",
+            "code": "NCH",
+            "state": "Assam"
+        },
+        {
+            "name": "NORTH TRIPURA",
+            "code": "NTR",
+            "state": "Tripura"
+        },
+        {
+            "name": "NORTH WEST DELHI",
+            "code": "NWD",
+            "state": "Delhi"
+        },
+        {
+            "name": "NUAPADA",
+            "code": "NPD",
+            "state": "Odisha"
+        },
+        {
+            "name": "ODALGURI",
+            "code": "ODG",
+            "state": "Assam"
+        },
+        {
+            "name": "OSMANABAD",
+            "code": "OMB",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PACHPEDIYA",
+            "code": "PPY",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "PACHPORI",
+            "code": "PPR",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PACHMARHI",
+            "code": "PMH",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PACHPADRA",
+            "code": "PDR",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "PACHPERWA",
+            "code": "PPW",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "PACHPOR",
+            "code": "POR",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PACHTI",
+            "code": "PTI",
+            "state": "Himachal Pradesh"
+        },
+        {
+            "name": "PADDHARI",
+            "code": "PDD",
+            "state": "Gujarat"
+        },
+        {
+            "name": "PADHAR",
+            "code": "PDR",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PADKA",
+            "code": "PDK",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PADMAPUR",
+            "code": "PMP",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PADRA",
+            "code": "PDR",
+            "state": "Gujarat"
+        },
+        {
+            "name": "PADRAUNA",
+            "code": "PDN",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "PADWA",
+            "code": "PDW",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PAHALA",
+            "code": "PHL",
+            "state": "Odisha"
+        },
+        {
+            "name": "PAHARI",
+            "code": "PHR",
+            "state": "Bihar"
+        },
+        {
+            "name": "PAHARPUR",
+            "code": "PPR",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "PAHRAULI",
+            "code": "PRL",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "PAIGA",
+            "code": "PGA",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "PAIKAR",
+            "code": "PKR",
+            "state": "West Bengal"
+        },
+        {
+            "name": "PAILAN",
+            "code": "PLN",
+            "state": "West Bengal"
+        },
+        {
+            "name": "PAINAVU",
+            "code": "PNV",
+            "state": "Kerala"
+        },
+        {
+            "name": "PAITHAN",
+            "code": "PTN",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PAKAUR",
+            "code": "PKR",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "PALAKKAD",
+            "code": "PLK",
+            "state": "Kerala"
+        },
+        {
+            "name": "PALAKKANUTHU",
+            "code": "PLN",
+            "state": "Kerala"
+        },
+        {
+            "name": "PALAKOL",
+            "code": "PLK",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PALAM",
+            "code": "PLM",
+            "state": "Delhi"
+        },
+        {
+            "name": "PALAMPUR",
+            "code": "PLR",
+            "state": "Himachal Pradesh"
+        },
+        {
+            "name": "PALANPUR",
+            "code": "PLN",
+            "state": "Gujarat"
+        },
+        {
+            "name": "PALASA",
+            "code": "PLS",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PALASIA",
+            "code": "PLS",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PALASNER",
+            "code": "PLR",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PALAULI",
+            "code": "PLL",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "PALAYAM",
+            "code": "PLY",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PALAYAMKOTTAI",
+            "code": "PLK",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PALAYANKOTTAI",
+            "code": "PLY",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PALDA",
+            "code": "PLD",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PALDHI",
+            "code": "PLH",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PALEJ",
+            "code": "PLJ",
+            "state": "Gujarat"
+        },
+        {
+            "name": "PALERA",
+            "code": "PLR",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PALESHWAR",
+            "code": "PLW",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PALGHAR",
+            "code": "PLG",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PALGHAT",
+            "code": "PLT",
+            "state": "Kerala"
+        },
+        {
+            "name": "PALI",
+            "code": "PLI",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "PALIA",
+            "code": "PLA",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "PALIAKALAN",
+            "code": "PLK",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "PALIYAKKARA",
+            "code": "PLY",
+            "state": "Kerala"
+        },
+        {
+            "name": "PALKOT",
+            "code": "PLK",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "PALLADAM",
+            "code": "PLD",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PALLAKADIYAM",
+            "code": "PLM",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PALLANA",
+            "code": "PLN",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "PALLAPALAYAM",
+            "code": "PLP",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PALLAPPATTI",
+            "code": "PLT",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PALLATHUR",
+            "code": "PLR",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PALLAVARAM",
+            "code": "PLV",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PALLIKONDA",
+            "code": "PKD",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PALLIPALAYAM",
+            "code": "PLP",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PALLIPATTI",
+            "code": "PLT",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PALUKU",
+            "code": "PLK",
+            "state": "Kerala"
+        },
+        {
+            "name": "PALWAL",
+            "code": "PLW",
+            "state": "Haryana"
+        },
+        {
+            "name": "PALWANCH",
+            "code": "PLC",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PAMARRU",
+            "code": "PMM",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PAMIDI",
+            "code": "PMD",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PAMUR",
+            "code": "PMR",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PANACHE",
+            "code": "PNC",
+            "state": "Gujarat"
+        },
+        {
+            "name": "PANADURA",
+            "code": "PDR",
+            "state": "Sri Lanka"
+        },
+        {
+            "name": "PANAGAR",
+            "code": "PNG",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PANAGARH",
+            "code": "PNH",
+            "state": "West Bengal"
+        },
+        {
+            "name": "PANAJI",
+            "code": "PNJ",
+            "state": "Goa"
+        },
+        {
+            "name": "PANALOOR",
+            "code": "PNR",
+            "state": "Kerala"
+        },
+        {
+            "name": "PANAMBUR",
+            "code": "PNB",
+            "state": "Karnataka"
+        },
+        {
+            "name": "PANAPAKKAM",
+            "code": "PNP",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PANARA",
+            "code": "PNR",
+            "state": "Gujarat"
+        },
+        {
+            "name": "PANAS",
+            "code": "PNS",
+            "state": "Gujarat"
+        },
+        {
+            "name": "PANCHALI",
+            "code": "PCL",
+            "state": "Karnataka"
+        },
+        {
+            "name": "PANCHGANI",
+            "code": "PCG",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PANCHKULA",
+            "code": "PCK",
+            "state": "Haryana"
+        },
+        {
+            "name": "PANDALAM",
+            "code": "PDM",
+            "state": "Kerala"
+        },
+        {
+            "name": "PANDARKAWDA",
+            "code": "PDK",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PANDHANA",
+            "code": "PDN",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PANDHARPUR",
+            "code": "PDR",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PANDHURNA",
+            "code": "PDH",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PANDIA",
+            "code": "PDA",
+            "state": "Odisha"
+        },
+        {
+            "name": "PANDILLAPALLI",
+            "code": "PDL",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PANDRA",
+            "code": "PDR",
+            "state": "Bihar"
+        },
+        {
+            "name": "PANDUA",
+            "code": "PDU",
+            "state": "West Bengal"
+        },
+        {
+            "name": "PANGIDI",
+            "code": "PGD",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PANHALA",
+            "code": "PHL",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PANIARA",
+            "code": "PNI",
+            "state": "Bihar"
+        },
+        {
+            "name": "PANIPAT",
+            "code": "PNP",
+            "state": "Haryana"
+        },
+        {
+            "name": "PANISAGAR",
+            "code": "PNS",
+            "state": "Tripura"
+        },
+        {
+            "name": "PANJIM",
+            "code": "PNJ",
+            "state": "Goa"
+        },
+        {
+            "name": "PANNA",
+            "code": "PNN",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PANOOR",
+            "code": "PNR",
+            "state": "Kerala"
+        },
+        {
+            "name": "PANRUTI",
+            "code": "PNT",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PANSEMAL",
+            "code": "PSM",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PANSKURA",
+            "code": "PSK",
+            "state": "West Bengal"
+        },
+        {
+            "name": "PANTNAGAR",
+            "code": "PNG",
+            "state": "Uttarakhand"
+        },
+        {
+            "name": "PANVEL",
+            "code": "PNV",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PAPANASAM",
+            "code": "PPM",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PAPPINISSERY",
+            "code": "PPY",
+            "state": "Kerala"
+        },
+        {
+            "name": "PARADEEP",
+            "code": "PRD",
+            "state": "Odisha"
+        },
+        {
+            "name": "PARALAKHEMUNDI",
+            "code": "PLK",
+            "state": "Odisha"
+        },
+        {
+            "name": "PARAMAKUDI",
+            "code": "PMK",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PARAMATHIVELUR",
+            "code": "PMV",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PARANDA",
+            "code": "PRN",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PARANGIPETTAI",
+            "code": "PPT",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PARANUR",
+            "code": "PNR",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PARATWADA",
+            "code": "PTW",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PARAVOOR",
+            "code": "PRV",
+            "state": "Kerala"
+        },
+        {
+            "name": "PARBHANI",
+            "code": "PRB",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PARLI",
+            "code": "PLI",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PAROLA",
+            "code": "PRL",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PARVATHIPURAM",
+            "code": "PVP",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PASAN",
+            "code": "PSN",
+            "state": "Chhattisgarh"
+        },
+        {
+            "name": "PASIGHAT",
+            "code": "PSG",
+            "state": "Arunachal Pradesh"
+        },
+        {
+            "name": "PATAN",
+            "code": "PTN",
+            "state": "Gujarat"
+        },
+        {
+            "name": "PATDI",
+            "code": "PTD",
+            "state": "Gujarat"
+        },
+        {
+            "name": "PATHALGAON",
+            "code": "PTG",
+            "state": "Chhattisgarh"
+        },
+        {
+            "name": "PATHANAMTHITTA",
+            "code": "PTA",
+            "state": "Kerala"
+        },
+        {
+            "name": "PATHANKOT",
+            "code": "PTK",
+            "state": "Punjab"
+        },
+        {
+            "name": "PATHARDI",
+            "code": "PTH",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PATHRI",
+            "code": "PTI",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PATIALA",
+            "code": "PTL",
+            "state": "Punjab"
+        },
+        {
+            "name": "PATNA",
+            "code": "PTN",
+            "state": "Bihar"
+        },
+        {
+            "name": "PATTAMBI",
+            "code": "PTM",
+            "state": "Kerala"
+        },
+        {
+            "name": "PATTUKKOTTAI",
+            "code": "PTT",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PAURI",
+            "code": "PRR",
+            "state": "Uttarakhand"
+        },
+        {
+            "name": "PAVAGADA",
+            "code": "PVG",
+            "state": "Karnataka"
+        },
+        {
+            "name": "PAVANJE",
+            "code": "PVE",
+            "state": "Karnataka"
+        },
+        {
+            "name": "PAVUGADA",
+            "code": "PVG",
+            "state": "Karnataka"
+        },
+        {
+            "name": "PAYAKARAOPETA",
+            "code": "PKP",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PAYYANUR",
+            "code": "PYR",
+            "state": "Kerala"
+        },
+        {
+            "name": "PEDANA",
+            "code": "PDA",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PEDDAPALLI",
+            "code": "PPL",
+            "state": "Telangana"
+        },
+        {
+            "name": "PEDDAPURAM",
+            "code": "PDP",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PEHOWA",
+            "code": "PWA",
+            "state": "Haryana"
+        },
+        {
+            "name": "PEN",
+            "code": "PEN",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PENDRA",
+            "code": "PND",
+            "state": "Chhattisgarh"
+        },
+        {
+            "name": "PERAMBALUR",
+            "code": "PRL",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PERINTHALMANNA",
+            "code": "PTM",
+            "state": "Kerala"
+        },
+        {
+            "name": "PERIYAKULAM",
+            "code": "PKL",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PERUMBAVOOR",
+            "code": "PRB",
+            "state": "Kerala"
+        },
+        {
+            "name": "PETLAD",
+            "code": "PTD",
+            "state": "Gujarat"
+        },
+        {
+            "name": "PHAGWARA",
+            "code": "PGW",
+            "state": "Punjab"
+        },
+        {
+            "name": "PHALODI",
+            "code": "PHD",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "PHALTAN",
+            "code": "PLT",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PHILLAUR",
+            "code": "PLR",
+            "state": "Punjab"
+        },
+        {
+            "name": "PHULBANI",
+            "code": "PLB",
+            "state": "Odisha"
+        },
+        {
+            "name": "PHULERA",
+            "code": "PLR",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "PHULPUR",
+            "code": "PLP",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "PHULWARI SHARIF",
+            "code": "PWS",
+            "state": "Bihar"
+        },
+        {
+            "name": "PHUSRO",
+            "code": "PSR",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "PICHAVARAM",
+            "code": "PVM",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PICKLESGANJ",
+            "code": "PKG",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "PILANI",
+            "code": "PLI",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "PILIBHIT",
+            "code": "PBT",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "PILKHUWA",
+            "code": "PKW",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "PIMPALGAON",
+            "code": "PMG",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PIMPRI",
+            "code": "PMP",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PINJORE",
+            "code": "PNJ",
+            "state": "Haryana"
+        },
+        {
+            "name": "PIPAR",
+            "code": "PIP",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "PIRAVOM",
+            "code": "PVM",
+            "state": "Kerala"
+        },
+        {
+            "name": "PITHAMPUR",
+            "code": "PTH",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PITHAPURAM",
+            "code": "PTP",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PITHORAGARH",
+            "code": "PTR",
+            "state": "Uttarakhand"
+        },
+        {
+            "name": "PODDATURPET",
+            "code": "PDT",
+            "state": "Telangana"
+        },
+        {
+            "name": "POKHRAYAN",
+            "code": "PKY",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "POLADPUR",
+            "code": "PLD",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "POLLACHI",
+            "code": "PLI",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "POLUR",
+            "code": "POL",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PONDA",
+            "code": "PND",
+            "state": "Goa"
+        },
+        {
+            "name": "PONDICHERRY",
+            "code": "PDY",
+            "state": "Puducherry"
+        },
+        {
+            "name": "PONNANI",
+            "code": "PNI",
+            "state": "Kerala"
+        },
+        {
+            "name": "PONNUR",
+            "code": "PNR",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PORBANDAR",
+            "code": "PBD",
+            "state": "Gujarat"
+        },
+        {
+            "name": "PORT BLAIR",
+            "code": "PTB",
+            "state": "Andaman and Nicobar Islands"
+        },
+        {
+            "name": "POWAYAN",
+            "code": "POW",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "PRATAPGARH",
+            "code": "PTG",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "PRATAPGARH",
+            "code": "PGB",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "PRODDATUR",
+            "code": "PRD",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PUDUKKOTTAI",
+            "code": "PDK",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PULGAON",
+            "code": "PLG",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PULIYANGUDI",
+            "code": "PLY",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PULKIT",
+            "code": "PKT",
+            "state": "West Bengal"
+        },
+        {
+            "name": "PUNE",
+            "code": "PUN",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PUNJAIPULIAMPATTI",
+            "code": "PJP",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "PURI",
+            "code": "PUR",
+            "state": "Odisha"
+        },
+        {
+            "name": "PURNEA",
+            "code": "PRN",
+            "state": "Bihar"
+        },
+        {
+            "name": "PURQAZI",
+            "code": "PQZ",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "PURULIA",
+            "code": "PRL",
+            "state": "West Bengal"
+        },
+        {
+            "name": "PUSAD",
+            "code": "PSD",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "PUSHPRAJGARH",
+            "code": "PPJ",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "PUTTUR",
+            "code": "PUT",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "PUTTUR",
+            "code": "PTT",
+            "state": "Karnataka"
+        },
+        {
+            "name": "PYUTHAN",
+            "code": "PYT",
+            "state": "Nepal"
+        },
+        {
+            "name": "QADIAN",
+            "code": "QDN",
+            "state": "Punjab"
+        },
+        {
+            "name": "QUILANDY",
+            "code": "QLD",
+            "state": "Kerala"
+        },
+        {
+            "name": "RAE BARELI",
+            "code": "RBL",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "RAHURI",
+            "code": "RHR",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "RAIGAD",
+            "code": "RGD",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "RAIGARH",
+            "code": "RIG",
+            "state": "Chhattisgarh"
+        },
+        {
+            "name": "RAIKOT",
+            "code": "RKT",
+            "state": "Punjab"
+        },
+        {
+            "name": "RAIPUR",
+            "code": "RPR",
+            "state": "Chhattisgarh"
+        },
+        {
+            "name": "RAIPUR RANI",
+            "code": "RPRR",
+            "state": "Haryana"
+        },
+        {
+            "name": "RAJAHMUNDRY",
+            "code": "RJY",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "RAJAMPET",
+            "code": "RJP",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "RAJAPALAYAM",
+            "code": "RJPY",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "RAJGARH",
+            "code": "RJG",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "RAJKOT",
+            "code": "RJK",
+            "state": "Gujarat"
+        },
+        {
+            "name": "RAJNANDGAON",
+            "code": "RJN",
+            "state": "Chhattisgarh"
+        },
+        {
+            "name": "RAJPIPLA",
+            "code": "RPL",
+            "state": "Gujarat"
+        },
+        {
+            "name": "RAJPURA",
+            "code": "RPJ",
+            "state": "Punjab"
+        },
+        {
+            "name": "RAJSAMAND",
+            "code": "RJS",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "RAJULA",
+            "code": "RJL",
+            "state": "Gujarat"
+        },
+        {
+            "name": "RAMACHANDRAPURAM",
+            "code": "RCH",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "RAMAGUNDAM",
+            "code": "RMG",
+            "state": "Telangana"
+        },
+        {
+            "name": "RAMANAGARA",
+            "code": "RNG",
+            "state": "Karnataka"
+        },
+        {
+            "name": "RAMANATHAPURAM",
+            "code": "RMN",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "RAMBAN",
+            "code": "RMN",
+            "state": "Jammu and Kashmir"
+        },
+        {
+            "name": "RAMPUR",
+            "code": "RMP",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "RAMPUR BUSHAR",
+            "code": "RPB",
+            "state": "Himachal Pradesh"
+        },
+        {
+            "name": "RAMPURA",
+            "code": "RMA",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "RANAGHAT",
+            "code": "RGT",
+            "state": "West Bengal"
+        },
+        {
+            "name": "RANCHI",
+            "code": "RNC",
+            "state": "Jharkhand"
+        },
+        {
+            "name": "RANEBENNUR",
+            "code": "RNR",
+            "state": "Karnataka"
+        },
+        {
+            "name": "RANGIA",
+            "code": "RGA",
+            "state": "Assam"
+        },
+        {
+            "name": "RANIPET",
+            "code": "RNT",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "RATANGARH",
+            "code": "RTG",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "RATLAM",
+            "code": "RTL",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "RATNAGIRI",
+            "code": "RTN",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "RAURKELA",
+            "code": "RKL",
+            "state": "Odisha"
+        },
+        {
+            "name": "RAYAGADA",
+            "code": "RYG",
+            "state": "Odisha"
+        },
+        {
+            "name": "RENGALI",
+            "code": "RGL",
+            "state": "Odisha"
+        },
+        {
+            "name": "REWARI",
+            "code": "RWI",
+            "state": "Haryana"
+        },
+        {
+            "name": "RISHIKESH",
+            "code": "RSK",
+            "state": "Uttarakhand"
+        },
+        {
+            "name": "ROHTAK",
+            "code": "RTK",
+            "state": "Haryana"
+        },
+        {
+            "name": "ROORKEE",
+            "code": "RKE",
+            "state": "Uttarakhand"
+        },
+        {
+            "name": "RUDRAPRAYAG",
+            "code": "RDP",
+            "state": "Uttarakhand"
+        },
+        {
+            "name": "RUDRAPUR",
+            "code": "RDR",
+            "state": "Uttarakhand"
+        },
+        {
+            "name": "RUPNAGAR",
+            "code": "RPR",
+            "state": "Punjab"
+        },
+        {
+            "name": "SABARKANTHA",
+            "code": "SBK",
+            "state": "Gujarat"
+        },
+        {
+            "name": "SAGAR",
+            "code": "SGR",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "SAHARANPUR",
+            "code": "SRP",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "SAHARSA",
+            "code": "SSA",
+            "state": "Bihar"
+        },
+        {
+            "name": "SALEM",
+            "code": "SLM",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "SAMALKOT",
+            "code": "SML",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "SAMASTIPUR",
+            "code": "SMP",
+            "state": "Bihar"
+        },
+        {
+            "name": "SAMBALPUR",
+            "code": "SBR",
+            "state": "Odisha"
+        },
+        {
+            "name": "SAMBHAL",
+            "code": "SBL",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "SANGAREDDY",
+            "code": "SGD",
+            "state": "Telangana"
+        },
+        {
+            "name": "SANGRUR",
+            "code": "SGR",
+            "state": "Punjab"
+        },
+        {
+            "name": "SANGLI",
+            "code": "SLI",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "SANTINIKETAN",
+            "code": "SNT",
+            "state": "West Bengal"
+        },
+        {
+            "name": "SASARAM",
+            "code": "SSM",
+            "state": "Bihar"
+        },
+        {
+            "name": "SATARA",
+            "code": "STR",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "SATNA",
+            "code": "STN",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "SAWANTWADI",
+            "code": "SWD",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "SECUNDERABAD",
+            "code": "SCB",
+            "state": "Telangana"
+        },
+        {
+            "name": "SEHORE",
+            "code": "SHR",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "SENGOTTAI",
+            "code": "SGT",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "SHAHDOL",
+            "code": "SDL",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "SHAJAPUR",
+            "code": "SJP",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "SHILLONG",
+            "code": "SHL",
+            "state": "Meghalaya"
+        },
+        {
+            "name": "SHIMLA",
+            "code": "SML",
+            "state": "Himachal Pradesh"
+        },
+        {
+            "name": "SHIMOGA",
+            "code": "SMG",
+            "state": "Karnataka"
+        },
+        {
+            "name": "SHIRDI",
+            "code": "SDI",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "SHIVAMOGGA",
+            "code": "SVG",
+            "state": "Karnataka"
+        },
+        {
+            "name": "SIKAR",
+            "code": "SKR",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "SILCHAR",
+            "code": "SLC",
+            "state": "Assam"
+        },
+        {
+            "name": "SILIGURI",
+            "code": "SLG",
+            "state": "West Bengal"
+        },
+        {
+            "name": "SINDHUDURG",
+            "code": "SDG",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "SINGRAULI",
+            "code": "SGL",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "SIROHI",
+            "code": "SRH",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "SITAPUR",
+            "code": "STP",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "SIVAKASI",
+            "code": "SVK",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "SIVASAGAR",
+            "code": "SVS",
+            "state": "Assam"
+        },
+        {
+            "name": "SOLAN",
+            "code": "SLN",
+            "state": "Himachal Pradesh"
+        },
+        {
+            "name": "SOLAPUR",
+            "code": "SLP",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "SONEPUR",
+            "code": "SNP",
+            "state": "Bihar"
+        },
+        {
+            "name": "SONIPAT",
+            "code": "SPT",
+            "state": "Haryana"
+        },
+        {
+            "name": "SRI GANGANAGAR",
+            "code": "SGN",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "SRINAGAR",
+            "code": "SGR",
+            "state": "Jammu and Kashmir"
+        },
+        {
+            "name": "SRIVILLIPUTHUR",
+            "code": "SVR",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "SULTANPUR",
+            "code": "STN",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "SUNDARBAN",
+            "code": "SDB",
+            "state": "West Bengal"
+        },
+        {
+            "name": "SUNDARGARH",
+            "code": "SDH",
+            "state": "Odisha"
+        },
+        {
+            "name": "SURAT",
+            "code": "SRT",
+            "state": "Gujarat"
+        },
+        {
+            "name": "SURENDRANAGAR",
+            "code": "SRG",
+            "state": "Gujarat"
+        },
+        {
+            "name": "SURI",
+            "code": "SRI",
+            "state": "West Bengal"
+        },
+        {
+            "name": "TADPATRI",
+            "code": "TDP",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "TADEPALLIGUDEM",
+            "code": "TPG",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "TALCHER",
+            "code": "TLC",
+            "state": "Odisha"
+        },
+        {
+            "name": "TAMBARAM",
+            "code": "TBM",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "TANUKU",
+            "code": "TNK",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "TARN TARAN",
+            "code": "TTN",
+            "state": "Punjab"
+        },
+        {
+            "name": "TAWANG",
+            "code": "TWN",
+            "state": "Arunachal Pradesh"
+        },
+        {
+            "name": "TEHRI",
+            "code": "THR",
+            "state": "Uttarakhand"
+        },
+        {
+            "name": "TENALI",
+            "code": "TNL",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "TEZPUR",
+            "code": "TZP",
+            "state": "Assam"
+        },
+        {
+            "name": "THANE",
+            "code": "TNE",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "THANJAVUR",
+            "code": "TNJ",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "THIRUVALLA",
+            "code": "TVL",
+            "state": "Kerala"
+        },
+        {
+            "name": "THIRUVANANTHAPURAM",
+            "code": "TVM",
+            "state": "Kerala"
+        },
+        {
+            "name": "THOOTHUKUDI",
+            "code": "TTK",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "THRISSUR",
+            "code": "TSR",
+            "state": "Kerala"
+        },
+        {
+            "name": "TIKAMGARH",
+            "code": "TKG",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "TINSUKIA",
+            "code": "TSK",
+            "state": "Assam"
+        },
+        {
+            "name": "TIRUCHIRAPPALLI",
+            "code": "TRZ",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "TIRUNELVELI",
+            "code": "TRN",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "TIRUPATI",
+            "code": "TRP",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "TIRUPUR",
+            "code": "TUP",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "TIRUVANNAMALAI",
+            "code": "TVI",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "TONK",
+            "code": "TNK",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "TRIPUNITHURA",
+            "code": "TPA",
+            "state": "Kerala"
+        },
+        {
+            "name": "TUMKUR",
+            "code": "TUM",
+            "state": "Karnataka"
+        },
+        {
+            "name": "TURA",
+            "code": "TUR",
+            "state": "Meghalaya"
+        },
+        {
+            "name": "UDAIPUR",
+            "code": "UDP",
+            "state": "Rajasthan"
+        },
+        {
+            "name": "UDHAMPUR",
+            "code": "UDH",
+            "state": "Jammu and Kashmir"
+        },
+        {
+            "name": "UDUPI",
+            "code": "UDP",
+            "state": "Karnataka"
+        },
+        {
+            "name": "UJJAIN",
+            "code": "UJN",
+            "state": "Madhya Pradesh"
+        },
+        {
+            "name": "UNNAO",
+            "code": "UNO",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "UTTARKASHI",
+            "code": "UKI",
+            "state": "Uttarakhand"
+        },
+        {
+            "name": "VADODARA",
+            "code": "VDR",
+            "state": "Gujarat"
+        },
+        {
+            "name": "VALSAD",
+            "code": "VLD",
+            "state": "Gujarat"
+        },
+        {
+            "name": "VAPI",
+            "code": "VPI",
+            "state": "Gujarat"
+        },
+        {
+            "name": "VARANASI",
+            "code": "VNS",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "VARKALA",
+            "code": "VRL",
+            "state": "Kerala"
+        },
+        {
+            "name": "VELLORE",
+            "code": "VLR",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "VIJAYAWADA",
+            "code": "VJD",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "VIKARABAD",
+            "code": "VKD",
+            "state": "Telangana"
+        },
+        {
+            "name": "VILLUPURAM",
+            "code": "VPM",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "VISAKHAPATNAM",
+            "code": "VSK",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "VIZIANAGARAM",
+            "code": "VZM",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "WARANGAL",
+            "code": "WGL",
+            "state": "Telangana"
+        },
+        {
+            "name": "WARDHA",
+            "code": "WRD",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "WAYANAD",
+            "code": "WYD",
+            "state": "Kerala"
+        },
+        {
+            "name": "WEST GODAVARI",
+            "code": "WGD",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "name": "YADGIR",
+            "code": "YDG",
+            "state": "Karnataka"
+        },
+        {
+            "name": "YAMUNANAGAR",
+            "code": "YMN",
+            "state": "Haryana"
+        },
+        {
+            "name": "YAVATMAL",
+            "code": "YTL",
+            "state": "Maharashtra"
+        },
+        {
+            "name": "YELAHANKA",
+            "code": "YLK",
+            "state": "Karnataka"
+        },
+        {
+            "name": "YELDURTY",
+            "code": "YDY",
+            "state": "Telangana"
+        },
+        {
+            "name": "YERCAUD",
+            "code": "YRD",
+            "state": "Tamil Nadu"
+        },
+        {
+            "name": "ZAHIRABAD",
+            "code": "ZBD",
+            "state": "Telangana"
+        },
+        {
+            "name": "ZAMANIA",
+            "code": "ZMN",
+            "state": "Uttar Pradesh"
+        },
+        {
+            "name": "ZIRAKPUR",
+            "code": "ZKP",
+            "state": "Punjab"
+        },
+        {
+            "name": "ZIRO",
+            "code": "ZRO",
+            "state": "Arunachal Pradesh"
+        },
+        {
+            "name": "ZUNHEBOTO",
+            "code": "ZHB",
+            "state": "Nagaland"
+        }
+    ]
+}

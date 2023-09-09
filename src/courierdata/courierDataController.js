@@ -6,8 +6,11 @@ async function createCourierDataFn(id, courierDataDetail) {
     // Check if a courier data record with the specified cno exists
     const existingData = await CourierData.findOne({ 'courierDetails.cnumber': courierDataDetail.cnumber });
     if (existingData) {
-      console.log('Duplicate cno found');
-      return 'duplicate';
+      const courierDetail = existingData.courierDetails.find(detail => detail.cnumber === courierDataDetail.cnumber);
+  console.log('Parent ID:', existingData.id);
+  console.log('Detail with specific cnumber:', courierDetail);
+      console.log('Duplicate cno found',existingData.id);
+      return { status: 'duplicate', data: { id: existingData.id, courierDetails: courierDetail }};
     }
 
     // Check if a courier data record with the specified id exists
@@ -95,6 +98,43 @@ async function updateCourierDataFn(id, updatedCourierData) {
     }
   }
 }
+
+async function deepSearchCourierDataFn(req, res) {
+  try {
+    const { query } = req.query; // 'query' contains the substring to search for in 'cnumber'
+
+    // Use MongoDB aggregation to search for documents where 'cnumber' includes the specified substring
+    const result = await CourierData.aggregate([
+      {
+        $unwind: "$courierDetails" // Unwind the 'courierDetails' array
+      },
+      {
+        $match: {
+          "courierDetails.cnumber": {
+            $regex: query, // Use regex to search for the substring
+            $options: "i" // Optional: Case-insensitive search
+          }
+        }
+      }
+    ]);
+
+    if (result.length === 0) {
+      // If no courier data with the specified substring in 'cnumber' is found, return an appropriate response
+      return res.json({ status: 404, message: 'No Data Found', data: [] });
+    }
+
+    // Return the matching courier data
+    res.json({ status: 200, message: 'Success', data: result});
+  } catch (error) {
+    // Handle any errors that may occur during the database query or processing
+    console.error(error);
+    res.status(500).json({ status: 500, message: 'Internal Server Error', data: null });
+  }
+}
+
+
+
+
 
 
 
@@ -315,7 +355,7 @@ async function fetchDataWithinDateRange(req, res) {
 
 
 
-module.exports = { createCourierDataFn,fetchDataWithinDateRange,updateCourierDataFn,deleteCourierDataById};
+module.exports = { createCourierDataFn,fetchDataWithinDateRange,updateCourierDataFn,deleteCourierDataById,deepSearchCourierDataFn};
 
 
 
