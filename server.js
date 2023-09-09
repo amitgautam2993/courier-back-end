@@ -100,6 +100,8 @@ const MONGO_DBNAME = process.env.MONGO_DBNAME || 'track4u';
 console.log(`CORS_ORIGIN is ${CORS_ORIGIN}`);
 
 console.log(`Running in ${process.env.NODE_ENV} environment.`);
+console.log('Connecting to:', process.env.MONGO_URI);
+
 const MONGO_URI = process.env.MONGO_URI || `mongodb://${process.env.MONGO_USER}:${encodeURIComponent(process.env.MONGO_PASS)}@${process.env.MONGO_HOST}/?authMechanism=DEFAULT`;
 
 // ... rest of the code
