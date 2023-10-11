@@ -1,7 +1,8 @@
 var express = require('express');
 const app = express();
 const axios = require('axios');
-
+const cheerio = require('cheerio');
+const puppeteer = require('puppeteer');
 var studentController = require('../src/student/studentController');
 var companiesDetailController = require('../src/companiesDetail/companiesDetailController')
 var courierDataController = require('../src/courierdata/courierDataController')
@@ -130,6 +131,75 @@ router.post('/api/trackings/realtime', async (req, res) => {
     res.status(error.response.status).send(error.response.data);
   }
 });
+
+
+
+router.get('/api/trackings/realtime/shipmenthistory/:childConsignments', async (req, res) => {
+  try {
+    const childConsignments = req.params.childConsignments;
+
+
+    const response = await axios.post(`https://track.dtdc.com/ctbs-tracking/showTrackingHomepage.tr?submitName=getLoadMovementForChildConsgnments&childConsignments=${childConsignments}&mode=frplus&maskedPhNumVisibilityAccess=Y`);
+    // function removeHtmlTags(input) {
+    //   const $ = cheerio.load(input);
+    //   return $.text();
+    // }
+    // const cleanedData = response.data.map(entry => ({
+    //   ...entry,
+    //   connection: removeHtmlTags(entry.connection),
+    //   action: removeHtmlTags(entry.action),
+    //   date: removeHtmlTags(entry.date)
+    // }));
+  res.send(response.data);
+     //res.send(cleanedData);
+    
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).json({ error: 'An error occurred.' });
+  }
+});
+
+//https://track.dtdc.com/ctbs-tracking/showTrackingHomepage.tr?submitName=getOfficeDetTR&officeNAme=BANGALORE YELAHANKA APEX create an get api for this url
+
+
+router.get('/api/trackings/realtime/officeDetails/:submitName/:officeNAme', async (req, res) => {
+  try {
+    const { submitName, officeNAme } = req.params;
+    const response = await axios.get('https://track.dtdc.com/ctbs-tracking/showTrackingHomepage.tr', {
+      params: {
+        submitName,
+        officeNAme
+      }
+    });
+    res.json(response.data);
+    console.log(response.data)
+
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).json({ error: 'An error occurred.' });
+  }
+})
+router.get('/api/trackings/realtime/franchiseeDetails/:submitName/:frName', async (req, res) => {
+  try {
+    const { submitName, frName } = req.params;
+    const response = await axios.get('https://track.dtdc.com/ctbs-tracking/showTrackingHomepage.tr', {
+      params: {
+        submitName,
+        frName
+      }
+    });
+    res.json(response.data);
+    console.log(response)
+
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).json({ error: 'An error occurred.' });
+  }
+})
+
+module.exports = router;
+
+
 
 module.exports = router;
 
