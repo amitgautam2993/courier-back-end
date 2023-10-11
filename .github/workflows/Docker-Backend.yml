@@ -19,4 +19,4 @@ jobs:
       run: docker build -t amitgautam67/track4u_backend .
 
     - name: Push Docker Image to Docker Hub
-      run: docker push amitgautam67/track4u_backend:latest
+      run: docker push amitgautam67/track4u_backend:v2.1.0
